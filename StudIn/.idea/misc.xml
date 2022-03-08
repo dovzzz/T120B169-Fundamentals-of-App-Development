@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Dominykas/Documents/GitHub/T120B169-Fundamentals-of-App-Development/StudIn/app/src/main/res/drawable/ic_myevents.xml" value="0.13" />
+        <entry key="..\:/Users/Dominykas/Documents/GitHub/T120B169-Fundamentals-of-App-Development/StudIn/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Dominykas/Documents/GitHub/T120B169-Fundamentals-of-App-Development/StudIn/app/src/main/res/layout/activity_my_event.xml" value="0.2" />
+        <entry key="..\:/Users/Dominykas/Documents/GitHub/T120B169-Fundamentals-of-App-Development/StudIn/app/src/main/res/layout/activity_settings.xml" value="0.264" />
+        <entry key="..\:/Users/Dominykas/Documents/GitHub/T120B169-Fundamentals-of-App-Development/StudIn/app/src/main/res/layout/toolbar.xml" value="0.1" />
+        <entry key="..\:/Users/Dominykas/Documents/GitHub/T120B169-Fundamentals-of-App-Development/StudIn/app/src/main/res/menu/mymenu.xml" value="0.264" />
         <entry key="..\:/Users/dovil/github/T120B169-Fundamentals-of-App-Development/StudIn/app/src/main/res/layout/activity_add_new_event.xml" value="0.2341485507246377" />
         <entry key="..\:/Users/dovil/github/T120B169-Fundamentals-of-App-Development/StudIn/app/src/main/res/layout/activity_main.xml" value="0.264" />
       </map>

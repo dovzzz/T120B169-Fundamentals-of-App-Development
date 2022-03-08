@@ -18,6 +18,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.313" />
 
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
     <Button
         android:id="@+id/buttonAddEvent"
         android:layout_width="44dp"

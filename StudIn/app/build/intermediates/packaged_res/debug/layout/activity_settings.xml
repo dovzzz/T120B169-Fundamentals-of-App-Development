@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settingsActivity">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"
+        />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="323dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="59dp"
+        android:text="On-click sounds"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/switch2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="323dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="29dp"
+        android:text="Dark mode"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/switch3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch1" />
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="326dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginBottom="52dp"
+        android:text="Notifications"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch2" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="124dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="237dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="124dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="237dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
