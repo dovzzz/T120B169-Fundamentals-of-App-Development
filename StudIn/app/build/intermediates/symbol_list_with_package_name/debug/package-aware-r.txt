@@ -71,6 +71,7 @@ animator nav_default_enter_anim
 animator nav_default_exit_anim
 animator nav_default_pop_enter_anim
 animator nav_default_pop_exit_anim
+array calendar_array
 attr SharedValue
 attr SharedValueId
 attr action
@@ -2663,8 +2664,12 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id buttonAdd
+id buttonAddEvent
+id buttonCancel
 id buttonPanel
 id cache_measures
+id calendarDropDown
 id callMeasure
 id cancel_button
 id carryVelocity
@@ -2738,6 +2743,12 @@ id easeIn
 id easeInOut
 id easeOut
 id east
+id editFirstRetakeDate
+id editTextCourseName
+id editTextExamDate
+id editTextExamDesc
+id editTextSources
+id editTextTextExamName
 id edit_query
 id elastic
 id end
@@ -2863,6 +2874,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id nav_addNewEvent
 id nav_controller_view_tag
 id nav_gallery
 id nav_home
@@ -3005,13 +3017,13 @@ id test_radiobutton_app_button_tint
 id text
 id text2
 id textEnd
+id textHome
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
+id textView2
 id text_gallery
-id text_home
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3166,6 +3178,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_addnewevent
 layout fragment_gallery
 layout fragment_home
 layout fragment_slideshow
@@ -3340,6 +3353,7 @@ string material_timepicker_minute
 string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
+string menu_addnewevent
 string menu_home
 string menu_settings
 string menu_smthMore

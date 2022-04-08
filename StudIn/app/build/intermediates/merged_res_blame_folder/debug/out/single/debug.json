@@ -92,6 +92,10 @@
         "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_addnewevent.xml.flat",
+        "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\layout\\fragment_addnewevent.xml"
+    },
+    {
         "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_slideshow.xml.flat",
         "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\layout\\fragment_slideshow.xml"
     },
