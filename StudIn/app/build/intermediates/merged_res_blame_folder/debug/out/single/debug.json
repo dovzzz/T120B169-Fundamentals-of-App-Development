@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_menu_slideshow.xml.flat",
+        "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\drawable\\ic_menu_slideshow.xml"
+    },
+    {
         "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
     },
@@ -8,32 +12,28 @@
         "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\layout\\fragment_home.xml"
     },
     {
         "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\drawable_side_nav_bar.xml.flat",
+        "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\drawable\\side_nav_bar.xml"
     },
     {
         "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
-    },
-    {
         "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_add_new_event.xml.flat",
-        "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\layout\\activity_add_new_event.xml"
+        "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\menu_main.xml.flat",
+        "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\menu\\main.xml"
     },
     {
         "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
@@ -44,36 +44,16 @@
         "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\menu_mymenu.xml.flat",
-        "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\menu\\mymenu.xml"
+        "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_menu_camera.xml.flat",
+        "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\drawable\\ic_menu_camera.xml"
     },
     {
         "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_settings.xml.flat",
-        "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\layout\\activity_settings.xml"
-    },
-    {
-        "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_myevents.xml.flat",
-        "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\drawable\\ic_myevents.xml"
-    },
-    {
-        "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_new.xml.flat",
-        "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\drawable\\ic_new.xml"
-    },
-    {
-        "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\layout_toolbar.xml.flat",
-        "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\layout\\toolbar.xml"
-    },
-    {
-        "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_my_event.xml.flat",
-        "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\layout\\activity_my_event.xml"
+        "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_gallery.xml.flat",
+        "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\layout\\fragment_gallery.xml"
     },
     {
         "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
@@ -86,5 +66,49 @@
     {
         "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\layout_nav_header_main.xml.flat",
+        "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\layout\\nav_header_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\layout_app_bar_main.xml.flat",
+        "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\layout\\app_bar_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\navigation_mobile_navigation.xml.flat",
+        "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\navigation\\mobile_navigation.xml"
+    },
+    {
+        "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_slideshow.xml.flat",
+        "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\layout\\fragment_slideshow.xml"
+    },
+    {
+        "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\layout_content_main.xml.flat",
+        "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\layout\\content_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_menu_gallery.xml.flat",
+        "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\drawable\\ic_menu_gallery.xml"
+    },
+    {
+        "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\menu_activity_main_drawer.xml.flat",
+        "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\menu\\activity_main_drawer.xml"
     }
 ]
