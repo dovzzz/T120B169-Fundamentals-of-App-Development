@@ -28,6 +28,7 @@
         android:minHeight="48dp"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextExamName"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
@@ -52,7 +53,7 @@
         android:hint="Exam Description"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextExamDate"
+        app:layout_constraintBottom_toTopOf="@+id/editTextDate0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -60,41 +61,15 @@
         android:id="@+id/editTextSources"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginBottom="200dp"
         android:ems="10"
         android:hint="Usefull Sources"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editFirstRetakeDate" />
-
-    <EditText
-        android:id="@+id/editTextExamDate"
-        android:clickable="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Exam Date"
-        android:inputType="datetime"
-        android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editFirstRetakeDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:ems="10"
-        android:hint="First Retake Date"
-        android:inputType="datetime"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextExamDate" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/buttonAdd"
@@ -117,5 +92,65 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextSources" />
+
+    <EditText
+        android:id="@+id/editTextDate0"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="Date"
+        android:inputType="date"
+        android:minHeight="48dp"
+        android:focusableInTouchMode="false"
+        app:layout_constraintBottom_toTopOf="@+id/editTextDate1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.321"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTime0"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="Time"
+        android:inputType="time"
+        android:minHeight="48dp"
+        android:focusableInTouchMode="false"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTime1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toEndOf="@+id/editTextDate0" />
+
+    <EditText
+        android:id="@+id/editTextDate1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="Retake date"
+        android:inputType="date"
+        android:minHeight="48dp"
+        android:focusableInTouchMode="false"
+        app:layout_constraintBottom_toTopOf="@+id/editTextSources"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.321"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTime1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="Retake time"
+        android:inputType="time"
+        android:minHeight="48dp"
+        android:focusableInTouchMode="false"
+        app:layout_constraintBottom_toTopOf="@+id/editTextSources"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/editTextDate1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

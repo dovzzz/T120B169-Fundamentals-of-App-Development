@@ -2742,12 +2742,14 @@ int id easeIn 0x7f0800af
 int id easeInOut 0x7f0800b0
 int id easeOut 0x7f0800b1
 int id east 0x7f0800b2
-int id editFirstRetakeDate 0x7f0801f7
 int id editTextCourseName 0x7f0801f8
-int id editTextExamDate 0x7f0801f9
+int id editTextDate0 0x7f0801ff
+int id editTextDate1 0x7f080200
 int id editTextExamDesc 0x7f0801fa
 int id editTextSources 0x7f0801fb
 int id editTextTextExamName 0x7f0801fc
+int id editTextTime0 0x7f080201
+int id editTextTime1 0x7f080202
 int id edit_query 0x7f0800b3
 int id elastic 0x7f0800b4
 int id end 0x7f0800b5

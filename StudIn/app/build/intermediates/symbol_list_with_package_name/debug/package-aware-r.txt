@@ -2743,12 +2743,14 @@ id easeIn
 id easeInOut
 id easeOut
 id east
-id editFirstRetakeDate
 id editTextCourseName
-id editTextExamDate
+id editTextDate0
+id editTextDate1
 id editTextExamDesc
 id editTextSources
 id editTextTextExamName
+id editTextTime0
+id editTextTime1
 id edit_query
 id elastic
 id end

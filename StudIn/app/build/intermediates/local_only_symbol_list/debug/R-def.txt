@@ -27,12 +27,14 @@ id buttonAddEvent
 id buttonCancel
 id calendarDropDown
 id drawer_layout
-id editFirstRetakeDate
 id editTextCourseName
-id editTextExamDate
+id editTextDate0
+id editTextDate1
 id editTextExamDesc
 id editTextSources
 id editTextTextExamName
+id editTextTime0
+id editTextTime1
 id fab
 id mobile_navigation
 id nav_addNewEvent
