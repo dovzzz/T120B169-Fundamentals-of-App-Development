@@ -2,14 +2,18 @@ package com.example.studin.ui.home;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.ScrollView;
 import android.widget.Spinner;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -21,7 +25,6 @@ import com.example.studin.database.AppActivity;
 import com.example.studin.database.AppDatabase;
 import com.example.studin.database.EventTable;
 import com.example.studin.databinding.FragmentHomeBinding;
-import com.google.android.material.snackbar.Snackbar;
 
 import java.util.List;
 
@@ -30,7 +33,8 @@ public class HomeFragment extends Fragment {
     private FragmentHomeBinding binding;
     private AppDatabase db;
 
-    private TextView eventListTextView;
+    private LinearLayout linearLayout;
+    private ScrollView scrollView;
     Button buttonAddEvent;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -40,9 +44,6 @@ public class HomeFragment extends Fragment {
 
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-
-        final TextView textView = binding.textHome;
-        //homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
 
 
         db = AppActivity.getDatabase();
@@ -65,16 +66,32 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 // on click opens data input view for new event
-
                 showAlertDialogButtonClicked(view);
-                Snackbar.make(view, "Button + clicked", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
             }
         });
 
-
-        eventListTextView = binding.txtList;
+        scrollView = binding.scrollViewE;
+        linearLayout = new LinearLayout(getActivity());
+        linearLayout.setOrientation(LinearLayout.VERTICAL);
         getEventList();
+        scrollView.addView(linearLayout);
+
+        linearLayout.setClickable(false);
+        int childCount = linearLayout.getChildCount();
+        for (int i = 0; i < childCount; i++) {
+            View childView = linearLayout.getChildAt(i);
+            int childViewId = childView.getId();
+            childView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    // open new fragment to view event and edit or remove it
+                    EventTable event = db.eventDAO().getTask(childViewId);
+                    final Bundle bundle = new Bundle();
+                    bundle.putInt("id", event.getId());
+                    Navigation.findNavController(view).navigate(R.id.nav_existingEvent, bundle);
+                }
+            });
+        }
 
 
         return root;
@@ -111,11 +128,28 @@ public class HomeFragment extends Fragment {
     }
 
     private void getEventList() {
-        eventListTextView.setText("");
+        scrollView.removeAllViews();
         List<EventTable> eventList = db.eventDAO().getAllTasks();
         for (EventTable event : eventList) {
-            eventListTextView.append(event.getAll());
-            eventListTextView.append("\n");
+            Button button = new Button(getActivity());
+            button.setId(event.getId());
+            button.setGravity(Gravity.LEFT);
+            button.setPadding(20,20,20,20);
+
+            RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.MATCH_PARENT,
+                    RelativeLayout.LayoutParams.MATCH_PARENT
+            );
+            params.setMargins(5, 5, 5, 20);
+            button.setLayoutParams(params);
+
+            GradientDrawable shape =  new GradientDrawable();
+            shape.setCornerRadius(15);
+            shape.setColor(getResources().getColor(R.color.tangerine_light));
+            button.setBackground(shape);
+
+            button.setText(event.getStringMain());
+            linearLayout.addView(button);
         }
     }
 

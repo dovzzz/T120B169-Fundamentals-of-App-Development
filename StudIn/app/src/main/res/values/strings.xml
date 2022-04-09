@@ -13,6 +13,11 @@
     <string name="menu_smthMore">Kažkas dar</string>
 
     <string name="menu_addnewevent">Add new event</string>
+    <string name="menu_existingevent">Event</string>
+    <string name="menu_editevent">Edit event</string>
+
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
 
     <string-array name="calendar_array">
         <item>Month</item>

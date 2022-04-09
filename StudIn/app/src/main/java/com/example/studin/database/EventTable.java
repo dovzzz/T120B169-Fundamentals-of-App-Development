@@ -9,7 +9,7 @@ import androidx.room.PrimaryKey;
 public class EventTable {
 
     @PrimaryKey(autoGenerate = true)
-    private long id;
+    private int id;
 
     @NonNull
     @ColumnInfo(name = "course_name")
@@ -42,7 +42,8 @@ public class EventTable {
     public EventTable() {
     }
 
-    public EventTable(String cname, String ename, String examd, String date0, String date1, String time0, String time1, String source) {
+    public EventTable(String cname, String ename, String examd, String date0, String date1,
+                      String time0, String time1, String source) {
         this.courseName = cname;
         this.examName = ename;
         this.examDesc = examd;
@@ -53,11 +54,11 @@ public class EventTable {
         this.sources = source;
     }
 
-    public void setId(@NonNull long id) {
+    public void setId(@NonNull int id) {
         this.id = id;
     }
 
-    public long getId() {
+    public int getId() {
         return this.id;
     }
 
@@ -125,8 +126,14 @@ public class EventTable {
         return this.sources;
     }
 
-    public String getAll() {
-        return this.id + " " + this.courseName + " " + this.examName + " " + this.examDesc + " " +
+    public String getStringMain() {
+        return this.courseName + " " + this.examName + " \n" +
+                this.examDate + " " + this.examTime + " " + this.firstRetakeDate + " " +
+                this.firstRetakeTime;
+    }
+
+    public String getStringAll() {
+        return this.id + " " + this.courseName + " " + this.examName + " " + this.examDesc + " \n" +
                 this.examDate + " " + this.examTime + " " + this.firstRetakeDate + " " +
                 this.firstRetakeTime + " " + this.sources;
     }

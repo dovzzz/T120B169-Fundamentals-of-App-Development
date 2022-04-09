@@ -5,6 +5,7 @@
     <color name="blue_midDark">#1A5775</color>
     <color name="yellow">#EFCA08</color>
     <color name="tangerine">#F08700</color>
+    <color name="tangerine_light">#FFDCAD</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 </resources>

@@ -1811,6 +1811,7 @@ color switch_thumb_material_light
 color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
 color tangerine
+color tangerine_light
 color teal
 color teal_light
 color test_color
@@ -2668,7 +2669,9 @@ id bounceStart
 id buttonAdd
 id buttonAddEvent
 id buttonCancel
+id buttonEdit
 id buttonPanel
+id buttonRemove
 id cache_measures
 id calendarDropDown
 id callMeasure
@@ -2879,6 +2882,8 @@ id mtrl_view_tag_bottom_padding
 id multiply
 id nav_addNewEvent
 id nav_controller_view_tag
+id nav_editEvent
+id nav_existingEvent
 id nav_gallery
 id nav_home
 id nav_host_fragment_container
@@ -2945,7 +2950,8 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
-id scrollView_temp
+id scrollViewE
+id scrollViewEx
 id scrollable
 id search_badge
 id search_bar
@@ -3026,6 +3032,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textViewEvent
 id text_gallery
 id text_input_end_icon
 id text_input_error_icon
@@ -3054,7 +3061,6 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
-id txt_list
 id unchecked
 id uniform
 id unlabeled
@@ -3183,6 +3189,8 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_addnewevent
+layout fragment_editevent
+layout fragment_existingevent
 layout fragment_gallery
 layout fragment_home
 layout fragment_slideshow
@@ -3305,6 +3313,8 @@ string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
+string delete
+string edit
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
@@ -3358,6 +3368,8 @@ string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
 string menu_addnewevent
+string menu_editevent
+string menu_existingevent
 string menu_home
 string menu_settings
 string menu_smthMore

@@ -9,6 +9,7 @@
     <color name="black">#FF000000</color>
     <color name="blue_midDark">#1A5775</color>
     <color name="tangerine">#F08700</color>
+    <color name="tangerine_light">#FFDCAD</color>
     <color name="teal">#00A6A6</color>
     <color name="teal_light">#85FFFF</color>
     <color name="white">#FFFFFFFF</color>
@@ -21,7 +22,11 @@
     <string name="action_about">About</string>
     <string name="action_settings">Settings</string>
     <string name="app_name">StudIn</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
     <string name="menu_addnewevent">Add new event</string>
+    <string name="menu_editevent">Edit event</string>
+    <string name="menu_existingevent">Event</string>
     <string name="menu_home">Home</string>
     <string name="menu_settings">Settings</string>
     <string name="menu_smthMore">Kažkas dar</string>

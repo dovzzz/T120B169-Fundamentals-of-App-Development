@@ -64,6 +64,10 @@
         "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
+        "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_editevent.xml.flat",
+        "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\layout\\fragment_editevent.xml"
+    },
+    {
         "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
@@ -110,6 +114,10 @@
     {
         "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_menu_gallery.xml.flat",
         "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\drawable\\ic_menu_gallery.xml"
+    },
+    {
+        "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_existingevent.xml.flat",
+        "source": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\layout\\fragment_existingevent.xml"
     },
     {
         "merged": "C:\\Users\\dovil\\github\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\merged_res\\debug\\menu_activity_main_drawer.xml.flat",
