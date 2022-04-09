@@ -6,17 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.addNewEvent.AddNewEventFragment">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="addNewEventWindow"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.058" />
-
     <EditText
         android:id="@+id/editTextCourseName"
         android:layout_width="wrap_content"
@@ -28,8 +17,10 @@
         android:minHeight="48dp"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextExamName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1" />
 
     <EditText
         android:id="@+id/editTextTextExamName"

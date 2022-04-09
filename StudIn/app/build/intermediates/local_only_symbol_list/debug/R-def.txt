@@ -43,11 +43,12 @@ id nav_home
 id nav_host_fragment_content_main
 id nav_slideshow
 id nav_view
+id scrollView_temp
 id textHome
-id textView2
 id text_gallery
 id text_slideshow
 id toolbar
+id txt_list
 layout activity_main
 layout app_bar_main
 layout content_main

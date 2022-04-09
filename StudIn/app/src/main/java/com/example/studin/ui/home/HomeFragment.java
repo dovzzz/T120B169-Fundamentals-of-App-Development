@@ -2,7 +2,6 @@ package com.example.studin.ui.home;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,21 +13,24 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProvider;
-import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
-import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.studin.R;
+import com.example.studin.database.AppActivity;
+import com.example.studin.database.AppDatabase;
+import com.example.studin.database.EventTable;
 import com.example.studin.databinding.FragmentHomeBinding;
-import com.example.studin.ui.addNewEvent.AddNewEventFragment;
 import com.google.android.material.snackbar.Snackbar;
+
+import java.util.List;
 
 public class HomeFragment extends Fragment {
 
     private FragmentHomeBinding binding;
+    private AppDatabase db;
+
+    private TextView eventListTextView;
     Button buttonAddEvent;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -43,6 +45,7 @@ public class HomeFragment extends Fragment {
         //homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
 
 
+        db = AppActivity.getDatabase();
         String[] items = getResources().getStringArray(R.array.calendar_array);
 
         //get the spinner from the xml.
@@ -50,7 +53,7 @@ public class HomeFragment extends Fragment {
         //create an adapter to describe how the items are displayed,
         //adapters are used in several places in android.
         ArrayAdapter<CharSequence> adapter = new ArrayAdapter<CharSequence>(getActivity(),
-                android.R.layout.simple_spinner_item,items);
+                android.R.layout.simple_spinner_item, items);
         // Specify the layout to use when the list of choices appears
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Apply the adapter to the spinner
@@ -68,6 +71,10 @@ public class HomeFragment extends Fragment {
                         .setAction("Action", null).show();
             }
         });
+
+
+        eventListTextView = binding.txtList;
+        getEventList();
 
 
         return root;
@@ -101,6 +108,15 @@ public class HomeFragment extends Fragment {
         // create and show the alert dialog
         AlertDialog dialog = builder.create();
         dialog.show();
+    }
+
+    private void getEventList() {
+        eventListTextView.setText("");
+        List<EventTable> eventList = db.eventDAO().getAllTasks();
+        for (EventTable event : eventList) {
+            eventListTextView.append(event.getAll());
+            eventListTextView.append("\n");
+        }
     }
 
 }
