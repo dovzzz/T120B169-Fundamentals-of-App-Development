@@ -20,9 +20,9 @@
     <string name="delete">Delete</string>
 
     <string-array name="calendar_array">
+        <item>All</item>
         <item>Month</item>
         <item>Week</item>
         <item>Day</item>
-        <item>Calendar:</item>
     </string-array>
 </resources>

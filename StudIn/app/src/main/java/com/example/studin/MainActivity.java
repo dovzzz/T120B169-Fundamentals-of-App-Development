@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
 
         //db= AppActivity.getDatabase();
 
-
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
@@ -66,4 +65,6 @@ public class MainActivity extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+
+
 }

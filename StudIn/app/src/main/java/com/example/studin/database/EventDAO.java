@@ -30,4 +30,19 @@ public interface EventDAO {
     @Query("SELECT * from EventTable")
     List<EventTable> getAllTasks();
 
+    @Query("SELECT * FROM EventTable WHERE exam_date BETWEEN date('now') AND date('now', 'start of month', '+1 month', '-1 day')")
+    List<EventTable> getMonthlyTasks2();
+
+    @Query("SELECT * FROM EventTable WHERE exam_date BETWEEN DATE('now') AND DATE('now', 'start of month', '+1 month', '-1 day')")
+    List<EventTable> getMonthlyTasks();
+
+    @Query("SELECT * FROM EventTable WHERE exam_date='2022/04/11'")
+    List<EventTable> getSpecific();
+
+    @Query("SELECT * FROM EventTable WHERE exam_date= DATE('now')")
+    List<EventTable> getDailyTasks();
+
+    @Query("SELECT * FROM EventTable WHERE exam_date BETWEEN date('now') AND date('now', 'weekday 6')")
+    List<EventTable> getWeeklyTasks();
+
 }

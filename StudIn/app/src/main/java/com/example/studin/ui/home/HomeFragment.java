@@ -8,12 +8,15 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CalendarView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -36,6 +39,9 @@ public class HomeFragment extends Fragment {
     private LinearLayout linearLayout;
     private ScrollView scrollView;
     Button buttonAddEvent;
+    Button buttonVisible;
+    CalendarView calendarView;
+
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -47,18 +53,165 @@ public class HomeFragment extends Fragment {
 
 
         db = AppActivity.getDatabase();
+        //Spinner pradzia
+
         String[] items = getResources().getStringArray(R.array.calendar_array);
 
         //get the spinner from the xml.
         Spinner spinner = binding.calendarDropDown;
         //create an adapter to describe how the items are displayed,
         //adapters are used in several places in android.
-        ArrayAdapter<CharSequence> adapter = new ArrayAdapter<CharSequence>(getActivity(),
-                android.R.layout.simple_spinner_item, items);
+        ArrayAdapter<CharSequence> adapter = new ArrayAdapter<CharSequence>(getActivity(), android.R.layout.simple_spinner_item, items);
         // Specify the layout to use when the list of choices appears
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Apply the adapter to the spinner
         spinner.setAdapter(adapter);
+
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
+                String item = adapterView.getItemAtPosition(position).toString();
+                //Toast.makeText(adapterView.getContext(), item, Toast.LENGTH_SHORT).show();
+                if(item.equals("Month"))
+                {
+                    Toast.makeText(adapterView.getContext(), "FIVE", Toast.LENGTH_SHORT).show();
+
+                    scrollView.invalidate();
+
+                    scrollView = binding.scrollViewE;
+                    linearLayout = new LinearLayout(getActivity());
+                    linearLayout.setOrientation(LinearLayout.VERTICAL);
+                    getMonthlyEventList();
+                    scrollView.addView(linearLayout);
+
+                    linearLayout.setClickable(false);
+                    int childCount = linearLayout.getChildCount();
+                    for (int i = 0; i < childCount; i++) {
+                        View childView = linearLayout.getChildAt(i);
+                        int childViewId = childView.getId();
+                        childView.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                // open new fragment to view event and edit or remove it
+                                EventTable event = db.eventDAO().getTask(childViewId);
+                                final Bundle bundle = new Bundle();
+                                bundle.putInt("id", event.getId());
+                                Navigation.findNavController(view).navigate(R.id.nav_existingEvent, bundle);
+                            }
+                        });
+                    }
+
+                }
+                else if(item.equals("All"))
+                {
+
+                    scrollView.invalidate();
+
+                    scrollView = binding.scrollViewE;
+                    linearLayout = new LinearLayout(getActivity());
+                    linearLayout.setOrientation(LinearLayout.VERTICAL);
+                    getEventList();
+                    scrollView.addView(linearLayout);
+
+                    linearLayout.setClickable(false);
+                    int childCount = linearLayout.getChildCount();
+                    for (int i = 0; i < childCount; i++) {
+                        View childView = linearLayout.getChildAt(i);
+                        int childViewId = childView.getId();
+                        childView.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                // open new fragment to view event and edit or remove it
+                                EventTable event = db.eventDAO().getTask(childViewId);
+                                final Bundle bundle = new Bundle();
+                                bundle.putInt("id", event.getId());
+                                Navigation.findNavController(view).navigate(R.id.nav_existingEvent, bundle);
+                            }
+                        });
+                    }
+                }
+                else if(item.equals("Day"))
+                {
+
+                    scrollView.invalidate();
+
+                    scrollView = binding.scrollViewE;
+                    linearLayout = new LinearLayout(getActivity());
+                    linearLayout.setOrientation(LinearLayout.VERTICAL);
+                    getDailyEventList();
+                    scrollView.addView(linearLayout);
+
+                    linearLayout.setClickable(false);
+                    int childCount = linearLayout.getChildCount();
+                    for (int i = 0; i < childCount; i++) {
+                        View childView = linearLayout.getChildAt(i);
+                        int childViewId = childView.getId();
+                        childView.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                // open new fragment to view event and edit or remove it
+                                EventTable event = db.eventDAO().getTask(childViewId);
+                                final Bundle bundle = new Bundle();
+                                bundle.putInt("id", event.getId());
+                                Navigation.findNavController(view).navigate(R.id.nav_existingEvent, bundle);
+                            }
+                        });
+                    }
+                }
+                else if(item.equals("Week"))
+                {
+
+                    scrollView.invalidate();
+
+                    scrollView = binding.scrollViewE;
+                    linearLayout = new LinearLayout(getActivity());
+                    linearLayout.setOrientation(LinearLayout.VERTICAL);
+                    getWeeklyEventList();
+                    scrollView.addView(linearLayout);
+
+                    linearLayout.setClickable(false);
+                    int childCount = linearLayout.getChildCount();
+                    for (int i = 0; i < childCount; i++) {
+                        View childView = linearLayout.getChildAt(i);
+                        int childViewId = childView.getId();
+                        childView.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                // open new fragment to view event and edit or remove it
+                                EventTable event = db.eventDAO().getTask(childViewId);
+                                final Bundle bundle = new Bundle();
+                                bundle.putInt("id", event.getId());
+                                Navigation.findNavController(view).navigate(R.id.nav_existingEvent, bundle);
+                            }
+                        });
+                    }
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+
+
+        buttonVisible = binding.buttonVisible;
+        buttonVisible.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                CalendarView cc = (CalendarView) getView().findViewById(R.id.calendarView);
+
+                if (cc.getVisibility() == View.VISIBLE)
+                {
+                    cc.setVisibility(View.INVISIBLE);
+                }
+                else if (cc.getVisibility() == View.INVISIBLE)
+                {
+                    cc.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+
 
         buttonAddEvent = binding.buttonAddEvent;
         buttonAddEvent.setOnClickListener(new View.OnClickListener() {
@@ -69,6 +222,8 @@ public class HomeFragment extends Fragment {
                 showAlertDialogButtonClicked(view);
             }
         });
+
+
 
         scrollView = binding.scrollViewE;
         linearLayout = new LinearLayout(getActivity());
@@ -102,6 +257,8 @@ public class HomeFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
+
+
 
     public void showAlertDialogButtonClicked(View view) {
 
@@ -152,5 +309,88 @@ public class HomeFragment extends Fragment {
             linearLayout.addView(button);
         }
     }
+
+    private void getMonthlyEventList() {
+
+        scrollView.removeAllViews();
+        List<EventTable> eventList = db.eventDAO().getMonthlyTasks();
+        for (EventTable event : eventList) {
+            Button button = new Button(getActivity());
+            button.setId(event.getId());
+            button.setGravity(Gravity.LEFT);
+            button.setPadding(20,20,20,20);
+
+            RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.MATCH_PARENT,
+                    RelativeLayout.LayoutParams.MATCH_PARENT
+            );
+            params.setMargins(5, 5, 5, 20);
+            button.setLayoutParams(params);
+
+            GradientDrawable shape =  new GradientDrawable();
+            shape.setCornerRadius(15);
+            shape.setColor(getResources().getColor(R.color.tangerine_light));
+            button.setBackground(shape);
+
+            button.setText(event.getStringMain());
+            linearLayout.addView(button);
+        }
+    }
+
+    private void getDailyEventList() {
+
+        scrollView.removeAllViews();
+        List<EventTable> eventList = db.eventDAO().getDailyTasks();
+        for (EventTable event : eventList) {
+            Button button = new Button(getActivity());
+            button.setId(event.getId());
+            button.setGravity(Gravity.LEFT);
+            button.setPadding(20,20,20,20);
+
+            RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.MATCH_PARENT,
+                    RelativeLayout.LayoutParams.MATCH_PARENT
+            );
+            params.setMargins(5, 5, 5, 20);
+            button.setLayoutParams(params);
+
+            GradientDrawable shape =  new GradientDrawable();
+            shape.setCornerRadius(15);
+            shape.setColor(getResources().getColor(R.color.tangerine_light));
+            button.setBackground(shape);
+
+            button.setText(event.getStringMain());
+            linearLayout.addView(button);
+        }
+    }
+
+    private void getWeeklyEventList() {
+
+        scrollView.removeAllViews();
+        List<EventTable> eventList = db.eventDAO().getWeeklyTasks();
+        for (EventTable event : eventList) {
+            Button button = new Button(getActivity());
+            button.setId(event.getId());
+            button.setGravity(Gravity.LEFT);
+            button.setPadding(20,20,20,20);
+
+            RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.MATCH_PARENT,
+                    RelativeLayout.LayoutParams.MATCH_PARENT
+            );
+            params.setMargins(5, 5, 5, 20);
+            button.setLayoutParams(params);
+
+            GradientDrawable shape =  new GradientDrawable();
+            shape.setCornerRadius(15);
+            shape.setColor(getResources().getColor(R.color.tangerine_light));
+            button.setBackground(shape);
+
+            button.setText(event.getStringMain());
+            linearLayout.addView(button);
+        }
+    }
+
+
 
 }

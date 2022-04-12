@@ -144,7 +144,7 @@ public class AddNewEventFragment extends Fragment{
                             public void onTimeSet(TimePicker tp, int sHour, int sMinute) {
                                 examTime0.setText(setTimeFormat(sMinute, sHour));
 
-                                String curDate = new SimpleDateFormat("yyyy/MM/dd").format(new Date());
+                                String curDate = new SimpleDateFormat("YYYY-MM-DD").format(new Date());
                                 String curTime = new SimpleDateFormat("HH:mm").format(new Date());
                                 if (examDate0.getText().toString().compareTo(curDate) == 0 &&
                                         examTime0.getText().toString().compareTo(curTime) <= 0) {
@@ -246,13 +246,13 @@ public class AddNewEventFragment extends Fragment{
     private String setDateFormat(int day, int month, int year) {
         String date;
         if (day < 10 && month + 1 < 10) {
-            date = year + "/0" + (month + 1) + "/0" + day;
+            date = year + "-0" + (month + 1) + "-0" + day;
         } else if (day < 10 && month + 1 >= 10) {
-            date = year + "/" + (month + 1) + "/0" + day;
+            date = year + "-" + (month + 1) + "-0" + day;
         } else if (day >= 10 && month + 1 < 10) {
-            date = year + "/0" + (month + 1) + "/" + day;
+            date = year + "-0" + (month + 1) + "-" + day;
         } else {
-            date = year + "/" + (month + 1) + "/" + day;
+            date = year + "-" + (month + 1) + "-" + day;
         }
         return date;
     }
