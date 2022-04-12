@@ -6,96 +6,96 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="29"
-8-->C:\Users\domin\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml
+8-->C:\Users\dovil\github\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="32" />
-9-->C:\Users\domin\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml
+9-->C:\Users\dovil\github\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Users\domin\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:5:5-24:19
+11-->C:\Users\dovil\github\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:5:5-24:19
 12        android:name="com.example.studin.database.AppActivity"
-12-->C:\Users\domin\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:6:9-45
+12-->C:\Users\dovil\github\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:6:9-45
 13        android:allowBackup="true"
-13-->C:\Users\domin\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:7:9-35
+13-->C:\Users\dovil\github\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:7:9-35
 14        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-14-->[androidx.core:core:1.7.0] C:\Users\domin\.gradle\caches\transforms-3\46678933633e897331f6cbff7aabb141\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+14-->[androidx.core:core:1.7.0] C:\Users\dovil\.gradle\caches\transforms-3\46678933633e897331f6cbff7aabb141\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 15        android:debuggable="true"
 16        android:extractNativeLibs="false"
 17        android:icon="@mipmap/ic_launcher"
-17-->C:\Users\domin\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:8:9-43
+17-->C:\Users\dovil\github\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:8:9-43
 18        android:label="@string/app_name"
-18-->C:\Users\domin\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:9:9-41
+18-->C:\Users\dovil\github\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:9:9-41
 19        android:roundIcon="@mipmap/ic_launcher_round"
-19-->C:\Users\domin\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:10:9-54
+19-->C:\Users\dovil\github\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:10:9-54
 20        android:supportsRtl="true"
-20-->C:\Users\domin\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:11:9-35
+20-->C:\Users\dovil\github\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:11:9-35
 21        android:testOnly="true"
 22        android:theme="@style/Theme.StudIn" >
-22-->C:\Users\domin\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:12:9-44
+22-->C:\Users\dovil\github\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:12:9-44
 23        <activity
-23-->C:\Users\domin\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:13:9-23:20
+23-->C:\Users\dovil\github\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:13:9-23:20
 24            android:name="com.example.studin.MainActivity"
-24-->C:\Users\domin\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:14:13-41
+24-->C:\Users\dovil\github\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:14:13-41
 25            android:exported="true"
-25-->C:\Users\domin\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:15:13-36
+25-->C:\Users\dovil\github\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:15:13-36
 26            android:label="@string/app_name"
-26-->C:\Users\domin\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:16:13-45
+26-->C:\Users\dovil\github\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:16:13-45
 27            android:theme="@style/Theme.StudIn.NoActionBar" >
-27-->C:\Users\domin\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:17:13-60
+27-->C:\Users\dovil\github\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:17:13-60
 28            <intent-filter>
-28-->C:\Users\domin\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:18:13-22:29
+28-->C:\Users\dovil\github\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:18:13-22:29
 29                <action android:name="android.intent.action.MAIN" />
-29-->C:\Users\domin\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:19:17-69
-29-->C:\Users\domin\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:19:25-66
+29-->C:\Users\dovil\github\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:19:17-69
+29-->C:\Users\dovil\github\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:19:25-66
 30
 31                <category android:name="android.intent.category.LAUNCHER" />
-31-->C:\Users\domin\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:21:17-77
-31-->C:\Users\domin\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:21:27-74
+31-->C:\Users\dovil\github\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:21:17-77
+31-->C:\Users\dovil\github\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:21:27-74
 32            </intent-filter>
 33        </activity>
 34
 35        <service
-35-->[androidx.room:room-runtime:2.2.5] C:\Users\domin\.gradle\caches\transforms-3\3ec9ec4c7c59e6fab97076404f9aee49\transformed\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
+35-->[androidx.room:room-runtime:2.2.5] C:\Users\dovil\.gradle\caches\transforms-3\3ec9ec4c7c59e6fab97076404f9aee49\transformed\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
 36            android:name="androidx.room.MultiInstanceInvalidationService"
-36-->[androidx.room:room-runtime:2.2.5] C:\Users\domin\.gradle\caches\transforms-3\3ec9ec4c7c59e6fab97076404f9aee49\transformed\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
+36-->[androidx.room:room-runtime:2.2.5] C:\Users\dovil\.gradle\caches\transforms-3\3ec9ec4c7c59e6fab97076404f9aee49\transformed\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
 37            android:directBootAware="true"
-37-->[androidx.room:room-runtime:2.2.5] C:\Users\domin\.gradle\caches\transforms-3\3ec9ec4c7c59e6fab97076404f9aee49\transformed\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
+37-->[androidx.room:room-runtime:2.2.5] C:\Users\dovil\.gradle\caches\transforms-3\3ec9ec4c7c59e6fab97076404f9aee49\transformed\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
 38            android:exported="false" />
-38-->[androidx.room:room-runtime:2.2.5] C:\Users\domin\.gradle\caches\transforms-3\3ec9ec4c7c59e6fab97076404f9aee49\transformed\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
+38-->[androidx.room:room-runtime:2.2.5] C:\Users\dovil\.gradle\caches\transforms-3\3ec9ec4c7c59e6fab97076404f9aee49\transformed\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
 39
 40        <provider
-40-->[androidx.emoji2:emoji2:1.0.0] C:\Users\domin\.gradle\caches\transforms-3\8c082c95bd529051ea549ace80b5e003\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+40-->[androidx.emoji2:emoji2:1.0.0] C:\Users\dovil\.gradle\caches\transforms-3\8c082c95bd529051ea549ace80b5e003\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
 41            android:name="androidx.startup.InitializationProvider"
-41-->[androidx.emoji2:emoji2:1.0.0] C:\Users\domin\.gradle\caches\transforms-3\8c082c95bd529051ea549ace80b5e003\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+41-->[androidx.emoji2:emoji2:1.0.0] C:\Users\dovil\.gradle\caches\transforms-3\8c082c95bd529051ea549ace80b5e003\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
 42            android:authorities="com.example.studin.androidx-startup"
-42-->[androidx.emoji2:emoji2:1.0.0] C:\Users\domin\.gradle\caches\transforms-3\8c082c95bd529051ea549ace80b5e003\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+42-->[androidx.emoji2:emoji2:1.0.0] C:\Users\dovil\.gradle\caches\transforms-3\8c082c95bd529051ea549ace80b5e003\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
 43            android:exported="false" >
-43-->[androidx.emoji2:emoji2:1.0.0] C:\Users\domin\.gradle\caches\transforms-3\8c082c95bd529051ea549ace80b5e003\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+43-->[androidx.emoji2:emoji2:1.0.0] C:\Users\dovil\.gradle\caches\transforms-3\8c082c95bd529051ea549ace80b5e003\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
 44            <meta-data
-44-->[androidx.emoji2:emoji2:1.0.0] C:\Users\domin\.gradle\caches\transforms-3\8c082c95bd529051ea549ace80b5e003\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+44-->[androidx.emoji2:emoji2:1.0.0] C:\Users\dovil\.gradle\caches\transforms-3\8c082c95bd529051ea549ace80b5e003\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
 45                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-45-->[androidx.emoji2:emoji2:1.0.0] C:\Users\domin\.gradle\caches\transforms-3\8c082c95bd529051ea549ace80b5e003\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+45-->[androidx.emoji2:emoji2:1.0.0] C:\Users\dovil\.gradle\caches\transforms-3\8c082c95bd529051ea549ace80b5e003\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
 46                android:value="androidx.startup" />
-46-->[androidx.emoji2:emoji2:1.0.0] C:\Users\domin\.gradle\caches\transforms-3\8c082c95bd529051ea549ace80b5e003\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+46-->[androidx.emoji2:emoji2:1.0.0] C:\Users\dovil\.gradle\caches\transforms-3\8c082c95bd529051ea549ace80b5e003\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
 47            <meta-data
-47-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\domin\.gradle\caches\transforms-3\1417e026bf9408eea127bab3316820d3\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+47-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\dovil\.gradle\caches\transforms-3\1417e026bf9408eea127bab3316820d3\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
 48                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-48-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\domin\.gradle\caches\transforms-3\1417e026bf9408eea127bab3316820d3\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+48-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\dovil\.gradle\caches\transforms-3\1417e026bf9408eea127bab3316820d3\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
 49                android:value="androidx.startup" />
-49-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\domin\.gradle\caches\transforms-3\1417e026bf9408eea127bab3316820d3\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+49-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\dovil\.gradle\caches\transforms-3\1417e026bf9408eea127bab3316820d3\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
 50        </provider>
 51
 52        <uses-library
-52-->[androidx.window:window:1.0.0] C:\Users\domin\.gradle\caches\transforms-3\ed87a45bb076383e6b3450ed347397ef\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+52-->[androidx.window:window:1.0.0] C:\Users\dovil\.gradle\caches\transforms-3\ed87a45bb076383e6b3450ed347397ef\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
 53            android:name="androidx.window.extensions"
-53-->[androidx.window:window:1.0.0] C:\Users\domin\.gradle\caches\transforms-3\ed87a45bb076383e6b3450ed347397ef\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+53-->[androidx.window:window:1.0.0] C:\Users\dovil\.gradle\caches\transforms-3\ed87a45bb076383e6b3450ed347397ef\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
 54            android:required="false" />
-54-->[androidx.window:window:1.0.0] C:\Users\domin\.gradle\caches\transforms-3\ed87a45bb076383e6b3450ed347397ef\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+54-->[androidx.window:window:1.0.0] C:\Users\dovil\.gradle\caches\transforms-3\ed87a45bb076383e6b3450ed347397ef\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
 55        <uses-library
-55-->[androidx.window:window:1.0.0] C:\Users\domin\.gradle\caches\transforms-3\ed87a45bb076383e6b3450ed347397ef\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+55-->[androidx.window:window:1.0.0] C:\Users\dovil\.gradle\caches\transforms-3\ed87a45bb076383e6b3450ed347397ef\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
 56            android:name="androidx.window.sidecar"
-56-->[androidx.window:window:1.0.0] C:\Users\domin\.gradle\caches\transforms-3\ed87a45bb076383e6b3450ed347397ef\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+56-->[androidx.window:window:1.0.0] C:\Users\dovil\.gradle\caches\transforms-3\ed87a45bb076383e6b3450ed347397ef\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
 57            android:required="false" />
-57-->[androidx.window:window:1.0.0] C:\Users\domin\.gradle\caches\transforms-3\ed87a45bb076383e6b3450ed347397ef\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+57-->[androidx.window:window:1.0.0] C:\Users\dovil\.gradle\caches\transforms-3\ed87a45bb076383e6b3450ed347397ef\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
 58    </application>
 59
 60</manifest>

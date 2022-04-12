@@ -82,7 +82,7 @@ public class AddNewEventFragment extends Fragment{
                                                   int monthOfYear, int dayOfMonth) {
                                 examDate0.setText(setDateFormat(dayOfMonth, monthOfYear, year));
 
-                                String curDate = new SimpleDateFormat("yyyy/MM/dd").format(new Date());
+                                String curDate = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
                                 if (examDate0.getText().toString().compareTo(curDate) < 0) {
                                     examDate0.setTextColor(Color.RED);
                                     Toast toast = Toast.makeText(getActivity(), "Exam date " +

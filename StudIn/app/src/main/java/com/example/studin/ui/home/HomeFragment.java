@@ -16,7 +16,6 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.Spinner;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -74,7 +73,7 @@ public class HomeFragment extends Fragment {
                 //Toast.makeText(adapterView.getContext(), item, Toast.LENGTH_SHORT).show();
                 if(item.equals("Month"))
                 {
-                    Toast.makeText(adapterView.getContext(), "FIVE", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(adapterView.getContext(), "FIVE", Toast.LENGTH_SHORT).show();
 
                     scrollView.invalidate();
 
@@ -104,7 +103,6 @@ public class HomeFragment extends Fragment {
                 }
                 else if(item.equals("All"))
                 {
-
                     scrollView.invalidate();
 
                     scrollView = binding.scrollViewE;
@@ -132,7 +130,6 @@ public class HomeFragment extends Fragment {
                 }
                 else if(item.equals("Day"))
                 {
-
                     scrollView.invalidate();
 
                     scrollView = binding.scrollViewE;
@@ -160,7 +157,6 @@ public class HomeFragment extends Fragment {
                 }
                 else if(item.equals("Week"))
                 {
-
                     scrollView.invalidate();
 
                     scrollView = binding.scrollViewE;
@@ -224,7 +220,6 @@ public class HomeFragment extends Fragment {
         });
 
 
-
         scrollView = binding.scrollViewE;
         linearLayout = new LinearLayout(getActivity());
         linearLayout.setOrientation(LinearLayout.VERTICAL);
@@ -259,7 +254,6 @@ public class HomeFragment extends Fragment {
     }
 
 
-
     public void showAlertDialogButtonClicked(View view) {
 
         // setup the alert builder
@@ -287,87 +281,28 @@ public class HomeFragment extends Fragment {
     private void getEventList() {
         scrollView.removeAllViews();
         List<EventTable> eventList = db.eventDAO().getAllTasks();
-        for (EventTable event : eventList) {
-            Button button = new Button(getActivity());
-            button.setId(event.getId());
-            button.setGravity(Gravity.LEFT);
-            button.setPadding(20,20,20,20);
-
-            RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(
-                    RelativeLayout.LayoutParams.MATCH_PARENT,
-                    RelativeLayout.LayoutParams.MATCH_PARENT
-            );
-            params.setMargins(5, 5, 5, 20);
-            button.setLayoutParams(params);
-
-            GradientDrawable shape =  new GradientDrawable();
-            shape.setCornerRadius(15);
-            shape.setColor(getResources().getColor(R.color.tangerine_light));
-            button.setBackground(shape);
-
-            button.setText(event.getStringMain());
-            linearLayout.addView(button);
-        }
+        ViewList(eventList);
     }
 
     private void getMonthlyEventList() {
-
         scrollView.removeAllViews();
         List<EventTable> eventList = db.eventDAO().getMonthlyTasks();
-        for (EventTable event : eventList) {
-            Button button = new Button(getActivity());
-            button.setId(event.getId());
-            button.setGravity(Gravity.LEFT);
-            button.setPadding(20,20,20,20);
-
-            RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(
-                    RelativeLayout.LayoutParams.MATCH_PARENT,
-                    RelativeLayout.LayoutParams.MATCH_PARENT
-            );
-            params.setMargins(5, 5, 5, 20);
-            button.setLayoutParams(params);
-
-            GradientDrawable shape =  new GradientDrawable();
-            shape.setCornerRadius(15);
-            shape.setColor(getResources().getColor(R.color.tangerine_light));
-            button.setBackground(shape);
-
-            button.setText(event.getStringMain());
-            linearLayout.addView(button);
-        }
+        ViewList(eventList);
     }
 
     private void getDailyEventList() {
-
         scrollView.removeAllViews();
         List<EventTable> eventList = db.eventDAO().getDailyTasks();
-        for (EventTable event : eventList) {
-            Button button = new Button(getActivity());
-            button.setId(event.getId());
-            button.setGravity(Gravity.LEFT);
-            button.setPadding(20,20,20,20);
-
-            RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(
-                    RelativeLayout.LayoutParams.MATCH_PARENT,
-                    RelativeLayout.LayoutParams.MATCH_PARENT
-            );
-            params.setMargins(5, 5, 5, 20);
-            button.setLayoutParams(params);
-
-            GradientDrawable shape =  new GradientDrawable();
-            shape.setCornerRadius(15);
-            shape.setColor(getResources().getColor(R.color.tangerine_light));
-            button.setBackground(shape);
-
-            button.setText(event.getStringMain());
-            linearLayout.addView(button);
-        }
+        ViewList(eventList);
     }
 
     private void getWeeklyEventList() {
-
         scrollView.removeAllViews();
         List<EventTable> eventList = db.eventDAO().getWeeklyTasks();
+        ViewList(eventList);
+    }
+
+    private void ViewList(List<EventTable> eventList){
         for (EventTable event : eventList) {
             Button button = new Button(getActivity());
             button.setId(event.getId());
@@ -378,7 +313,7 @@ public class HomeFragment extends Fragment {
                     RelativeLayout.LayoutParams.MATCH_PARENT,
                     RelativeLayout.LayoutParams.MATCH_PARENT
             );
-            params.setMargins(5, 5, 5, 20);
+            params.setMargins(5, 5, 50, 20);
             button.setLayoutParams(params);
 
             GradientDrawable shape =  new GradientDrawable();
@@ -390,7 +325,5 @@ public class HomeFragment extends Fragment {
             linearLayout.addView(button);
         }
     }
-
-
 
 }
