@@ -36,33 +36,35 @@
 
     <Button
         android:id="@+id/buttonAddEvent"
-        android:layout_width="53dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="16dp"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
         android:text="+"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.148" />
+        app:layout_constraintVertical_bias="0.145" />
 
     <Spinner
         android:id="@+id/calendarDropDown"
-        android:layout_width="264dp"
-        android:layout_height="38dp"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
         android:spinnerMode="dropdown"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintEnd_toStartOf="@+id/buttonVisible"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/buttonAddEvent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.147" />
+        app:layout_constraintVertical_bias="0.145" />
 
     <ScrollView
         android:id="@+id/scrollViewE"
         android:layout_width="411dp"
         android:layout_height="206dp"
         android:layout_marginTop="4dp"
+        android:layout_marginBottom="10dp"
         android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -72,23 +74,22 @@
         android:id="@+id/calendarView"
         android:layout_width="333dp"
         android:layout_height="309dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="28dp"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/calendarDropDown" />
 
     <Button
         android:id="@+id/buttonVisible"
-        android:layout_width="67dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="154dp"
-        android:layout_marginBottom="132dp"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="20dp"
         android:drawableTop="@drawable/ic_eye"
-        app:layout_constraintBottom_toTopOf="@+id/scrollViewE"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/calendarView"
-        app:layout_constraintTop_toBottomOf="@+id/calendarDropDown" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.145" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

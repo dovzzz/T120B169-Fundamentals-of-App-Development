@@ -199,11 +199,13 @@ public class HomeFragment extends Fragment {
 
                 if (cc.getVisibility() == View.VISIBLE)
                 {
-                    cc.setVisibility(View.INVISIBLE);
+                    cc.setVisibility(View.GONE);
+                    scrollView.getLayoutParams().height = 1500;
                 }
-                else if (cc.getVisibility() == View.INVISIBLE)
+                else if (cc.getVisibility() == View.GONE)
                 {
                     cc.setVisibility(View.VISIBLE);
+                    scrollView.getLayoutParams().height = 570;
                 }
             }
         });
