@@ -14,6 +14,8 @@
         <entry key="..\:/Users/domin/Documents/GitHub/T120B169-Fundamentals-of-App-Development/StudIn/app/src/main/res/layout/splash_screen_activity.xml" value="0.25104166666666666" />
         <entry key="..\:/Users/domin/Documents/GitHub/T120B169-Fundamentals-of-App-Development/StudIn/app/src/main/res/menu/activity_main_drawer.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/domin/Documents/GitHub/T120B169-Fundamentals-of-App-Development/StudIn/app/src/main/res/menu/main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/dovil/github/T120B169-Fundamentals-of-App-Development/StudIn/app/src/main/res/drawable-anydpi/ic_menu_exportData.xml" value="0.211" />
+        <entry key="..\:/Users/dovil/github/T120B169-Fundamentals-of-App-Development/StudIn/app/src/main/res/drawable-anydpi/ic_menu_exportdata.xml" value="0.188" />
         <entry key="..\:/Users/dovil/github/T120B169-Fundamentals-of-App-Development/StudIn/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.204" />
         <entry key="..\:/Users/dovil/github/T120B169-Fundamentals-of-App-Development/StudIn/app/src/main/res/drawable/ic_launcher_background.xml" value="0.204" />
         <entry key="..\:/Users/dovil/github/T120B169-Fundamentals-of-App-Development/StudIn/app/src/main/res/drawable/ic_menu_camera.xml" value="0.204" />
@@ -27,6 +29,7 @@
         <entry key="..\:/Users/dovil/github/T120B169-Fundamentals-of-App-Development/StudIn/app/src/main/res/layout/fragment_editevent.xml" value="0.176" />
         <entry key="..\:/Users/dovil/github/T120B169-Fundamentals-of-App-Development/StudIn/app/src/main/res/layout/fragment_editeventfragment.xml" value="0.2" />
         <entry key="..\:/Users/dovil/github/T120B169-Fundamentals-of-App-Development/StudIn/app/src/main/res/layout/fragment_existingevent.xml" value="0.2" />
+        <entry key="..\:/Users/dovil/github/T120B169-Fundamentals-of-App-Development/StudIn/app/src/main/res/layout/fragment_exportdata.xml" value="0.264" />
         <entry key="..\:/Users/dovil/github/T120B169-Fundamentals-of-App-Development/StudIn/app/src/main/res/layout/fragment_gallery.xml" value="0.17346014492753623" />
         <entry key="..\:/Users/dovil/github/T120B169-Fundamentals-of-App-Development/StudIn/app/src/main/res/layout/fragment_home.xml" value="0.264" />
         <entry key="..\:/Users/dovil/github/T120B169-Fundamentals-of-App-Development/StudIn/app/src/main/res/layout/fragment_slideshow.xml" value="0.17346014492753623" />

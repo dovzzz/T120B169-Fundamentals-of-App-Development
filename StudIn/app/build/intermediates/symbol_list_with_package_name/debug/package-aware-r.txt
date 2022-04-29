@@ -2512,8 +2512,11 @@ drawable ic_launcher_foreground
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
+drawable ic_menu_calendar
 drawable ic_menu_camera
+drawable ic_menu_exportdata
 drawable ic_menu_gallery
+drawable ic_menu_settings
 drawable ic_menu_slideshow
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
@@ -2672,6 +2675,7 @@ id buttonAdd
 id buttonAddEvent
 id buttonCancel
 id buttonEdit
+id buttonExport
 id buttonPanel
 id buttonRemove
 id buttonVisible
@@ -2888,6 +2892,7 @@ id nav_addNewEvent
 id nav_controller_view_tag
 id nav_editEvent
 id nav_existingEvent
+id nav_exportData
 id nav_gallery
 id nav_home
 id nav_host_fragment_container
@@ -2954,6 +2959,7 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
+id scrollView2
 id scrollViewE
 id scrollViewEx
 id scrollable
@@ -3036,6 +3042,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
 id textViewEvent
 id text_gallery
 id text_input_end_icon
@@ -3195,6 +3202,7 @@ layout design_text_input_start_icon
 layout fragment_addnewevent
 layout fragment_editevent
 layout fragment_existingevent
+layout fragment_exportdata
 layout fragment_gallery
 layout fragment_home
 layout fragment_slideshow
@@ -3374,6 +3382,7 @@ string material_timepicker_text_input_mode_description
 string menu_addnewevent
 string menu_editevent
 string menu_existingevent
+string menu_exportdata
 string menu_home
 string menu_settings
 string menu_smthMore

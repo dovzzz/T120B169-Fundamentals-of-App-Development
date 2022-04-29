@@ -17,8 +17,11 @@ dimen nav_header_vertical_spacing
 drawable ic_eye
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_menu_calendar
 drawable ic_menu_camera
+drawable ic_menu_exportdata
 drawable ic_menu_gallery
+drawable ic_menu_settings
 drawable ic_menu_slideshow
 drawable side_nav_bar
 id action_about
@@ -29,6 +32,7 @@ id buttonAdd
 id buttonAddEvent
 id buttonCancel
 id buttonEdit
+id buttonExport
 id buttonRemove
 id buttonVisible
 id calendarDropDown
@@ -47,14 +51,17 @@ id mobile_navigation
 id nav_addNewEvent
 id nav_editEvent
 id nav_existingEvent
+id nav_exportData
 id nav_gallery
 id nav_home
 id nav_host_fragment_content_main
 id nav_slideshow
 id nav_view
+id scrollView2
 id scrollViewE
 id scrollViewEx
 id textHome
+id textView
 id textViewEvent
 id text_gallery
 id text_slideshow
@@ -65,6 +72,7 @@ layout content_main
 layout fragment_addnewevent
 layout fragment_editevent
 layout fragment_existingevent
+layout fragment_exportdata
 layout fragment_gallery
 layout fragment_home
 layout fragment_slideshow
@@ -82,6 +90,7 @@ string edit
 string menu_addnewevent
 string menu_editevent
 string menu_existingevent
+string menu_exportdata
 string menu_home
 string menu_settings
 string menu_smthMore

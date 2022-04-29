@@ -2511,8 +2511,11 @@ int drawable ic_launcher_foreground 0x7f080069
 int drawable ic_m3_chip_check 0x7f08006a
 int drawable ic_m3_chip_checked_circle 0x7f08006b
 int drawable ic_m3_chip_close 0x7f08006c
+int drawable ic_menu_calendar 0x7f0800a4
 int drawable ic_menu_camera 0x7f08006d
+int drawable ic_menu_exportdata 0x7f0800a2
 int drawable ic_menu_gallery 0x7f08006e
+int drawable ic_menu_settings 0x7f0800a3
 int drawable ic_menu_slideshow 0x7f08006f
 int drawable ic_mtrl_checked_circle 0x7f080070
 int drawable ic_mtrl_chip_checked_black 0x7f080071
@@ -2671,6 +2674,7 @@ int id buttonAdd 0x7f090067
 int id buttonAddEvent 0x7f090068
 int id buttonCancel 0x7f090069
 int id buttonEdit 0x7f09006a
+int id buttonExport 0x7f09020b
 int id buttonPanel 0x7f09006b
 int id buttonRemove 0x7f09006c
 int id buttonVisible 0x7f09006d
@@ -2887,6 +2891,7 @@ int id nav_addNewEvent 0x7f09013f
 int id nav_controller_view_tag 0x7f090140
 int id nav_editEvent 0x7f090141
 int id nav_existingEvent 0x7f090142
+int id nav_exportData 0x7f09020a
 int id nav_gallery 0x7f090143
 int id nav_home 0x7f090144
 int id nav_host_fragment_container 0x7f090145
@@ -2953,6 +2958,7 @@ int id scroll 0x7f090181
 int id scrollIndicatorDown 0x7f090182
 int id scrollIndicatorUp 0x7f090183
 int id scrollView 0x7f090184
+int id scrollView2 0x7f09020c
 int id scrollViewE 0x7f090185
 int id scrollViewEx 0x7f090186
 int id scrollable 0x7f090187
@@ -3035,6 +3041,7 @@ int id textSpacerNoButtons 0x7f0901d3
 int id textSpacerNoTitle 0x7f0901d4
 int id textStart 0x7f0901d5
 int id textTop 0x7f0901d6
+int id textView 0x7f09020d
 int id textViewEvent 0x7f0901d7
 int id text_gallery 0x7f0901d8
 int id text_input_end_icon 0x7f0901d9
@@ -3194,6 +3201,7 @@ int layout design_text_input_start_icon 0x7f0c002e
 int layout fragment_addnewevent 0x7f0c002f
 int layout fragment_editevent 0x7f0c0030
 int layout fragment_existingevent 0x7f0c0031
+int layout fragment_exportdata 0x7f0c007d
 int layout fragment_gallery 0x7f0c0032
 int layout fragment_home 0x7f0c0033
 int layout fragment_slideshow 0x7f0c0034
@@ -3373,6 +3381,7 @@ int string material_timepicker_text_input_mode_description 0x7f11005c
 int string menu_addnewevent 0x7f11005d
 int string menu_editevent 0x7f11005e
 int string menu_existingevent 0x7f11005f
+int string menu_exportdata 0x7f110095
 int string menu_home 0x7f110060
 int string menu_settings 0x7f110061
 int string menu_smthMore 0x7f110062
