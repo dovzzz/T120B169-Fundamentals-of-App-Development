@@ -6,34 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
-    <!--TextView
-        android:id="@+id/text_home"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" /-->
-
-    <TextView
-        android:id="@+id/textHome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="StudIn - task and event planner"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/calendarDropDown"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.313" />
-
     <Button
         android:id="@+id/buttonAddEvent"
         android:layout_width="60dp"
@@ -43,7 +15,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.145" />
+        app:layout_constraintVertical_bias="0.06" />
 
     <Spinner
         android:id="@+id/calendarDropDown"
@@ -55,12 +27,12 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/buttonAddEvent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.145" />
+        app:layout_constraintVertical_bias="0.06" />
 
     <ScrollView
         android:id="@+id/scrollViewE"
         android:layout_width="411dp"
-        android:layout_height="206dp"
+        android:layout_height="250dp"
         android:layout_marginTop="4dp"
         android:layout_marginBottom="10dp"
         android:padding="16dp"
@@ -86,10 +58,11 @@
         android:layout_width="60dp"
         android:layout_height="48dp"
         android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/teal"
         android:drawableTop="@drawable/ic_eye"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.145" />
+        app:layout_constraintVertical_bias="0.06" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

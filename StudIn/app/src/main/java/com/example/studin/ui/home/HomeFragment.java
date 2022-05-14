@@ -27,6 +27,7 @@ import com.example.studin.database.AppActivity;
 import com.example.studin.database.AppDatabase;
 import com.example.studin.database.EventTable;
 import com.example.studin.databinding.FragmentHomeBinding;
+import com.google.android.material.color.MaterialColors;
 
 import java.util.List;
 
@@ -200,12 +201,12 @@ public class HomeFragment extends Fragment {
                 if (cc.getVisibility() == View.VISIBLE)
                 {
                     cc.setVisibility(View.GONE);
-                    scrollView.getLayoutParams().height = 1500;
+                    scrollView.getLayoutParams().height = 1614;
                 }
                 else if (cc.getVisibility() == View.GONE)
                 {
                     cc.setVisibility(View.VISIBLE);
-                    scrollView.getLayoutParams().height = 570;
+                    scrollView.getLayoutParams().height = 688;
                 }
             }
         });
@@ -320,7 +321,8 @@ public class HomeFragment extends Fragment {
 
             GradientDrawable shape =  new GradientDrawable();
             shape.setCornerRadius(15);
-            shape.setColor(getResources().getColor(R.color.tangerine_light));
+
+            shape.setColor(MaterialColors.getColor(button, com.google.android.material.R.attr.colorSecondaryVariant));
             button.setBackground(shape);
 
             button.setText(event.getStringMain());

@@ -27,22 +27,15 @@ public interface EventDAO {
     @Query("SELECT * from EventTable WHERE id=:id")
     EventTable getTask(int id);
 
-    @Query("SELECT * from EventTable")
+    @Query("SELECT * from EventTable ORDER BY exam_date, exam_time")
     List<EventTable> getAllTasks();
 
-    @Query("SELECT * FROM EventTable WHERE exam_date BETWEEN date('now') AND date('now', 'start of month', '+1 month', '-1 day')")
-    List<EventTable> getMonthlyTasks2();
-
-    @Query("SELECT * FROM EventTable WHERE exam_date BETWEEN DATE('now') AND DATE('now', 'start of month', '+1 month', '-1 day')")
+    @Query("SELECT * FROM EventTable WHERE exam_date BETWEEN DATE('now') AND DATE('now', 'start of month', '+1 month', '-1 day') ORDER BY exam_date, exam_time")
     List<EventTable> getMonthlyTasks();
 
-    @Query("SELECT * FROM EventTable WHERE exam_date='2022/04/11'")
-    List<EventTable> getSpecific();
-
-    @Query("SELECT * FROM EventTable WHERE exam_date= DATE('now')")
-    List<EventTable> getDailyTasks();
-
-    @Query("SELECT * FROM EventTable WHERE exam_date BETWEEN date('now') AND date('now', 'weekday 6')")
+    @Query("SELECT * FROM EventTable WHERE exam_date BETWEEN date('now') AND date('now', 'weekday 6') ORDER BY exam_date, exam_time")
     List<EventTable> getWeeklyTasks();
 
+    @Query("SELECT * FROM EventTable WHERE exam_date= DATE('now') ORDER BY exam_date, exam_time")
+    List<EventTable> getDailyTasks();
 }
