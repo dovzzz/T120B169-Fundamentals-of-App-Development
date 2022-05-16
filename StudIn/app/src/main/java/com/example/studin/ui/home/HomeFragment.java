@@ -40,6 +40,7 @@ public class HomeFragment extends Fragment {
     private ScrollView scrollView;
     Button buttonAddEvent;
     Button buttonVisible;
+
     CalendarView calendarView;
 
 
@@ -259,27 +260,74 @@ public class HomeFragment extends Fragment {
 
     public void showAlertDialogButtonClicked(View view) {
 
-        // setup the alert builder
+
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle("Add new task");
 
+        // add a radio button list
+        String[] opts = {"Manually", "Scan QR code"};
+        int checkedItem = -1;
+        builder.setSingleChoiceItems(opts, checkedItem, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                // user checked an item
+                // user clicked OK
+                if (which == 0){
+                    Navigation.findNavController(view).navigate(R.id.nav_addNewEvent);
+                    //Toast.makeText(view.getContext(), "MANUALLY", Toast.LENGTH_SHORT).show();
+                    dialog.dismiss();
+
+                }
+                else if (which == 1) {
+                    Navigation.findNavController(view).navigate(R.id.nav_camera);
+                    //Toast.makeText(view.getContext(), "QR", Toast.LENGTH_SHORT).show();
+                    dialog.dismiss();
+                }
+            }
+        });
+        AlertDialog dialog = builder.create();
+        dialog.show();
+
+
+        /**builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        });
+        builder.setNegativeButton("Cancel", null); **/
+
+// create and show the alert dialog
+
+        // setup the alert builder
+        /**AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        builder.setTitle("Add new task");
+
         // add a list
-        String[] options = {"Manually", "Scan QR code"};
+        String[] options = {"Manually", "Scan QR code", "Testas"};
         builder.setItems(options, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 switch (which) {
                     case 0: // manually
                         Navigation.findNavController(view).navigate(R.id.nav_addNewEvent);
+                        Toast.makeText(view.getContext(), "MANUALLY", Toast.LENGTH_SHORT).show();
                     case 1: // qr code
+                        Navigation.findNavController(view).navigate(R.id.nav_camera);
+                        Toast.makeText(view.getContext(), "QR", Toast.LENGTH_SHORT).show();
+
                 }
             }
         });
 
+
+
         // create and show the alert dialog
         AlertDialog dialog = builder.create();
-        dialog.show();
+        dialog.show(); **/
     }
+
+
 
     private void getEventList() {
         scrollView.removeAllViews();

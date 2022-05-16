@@ -24,8 +24,11 @@ drawable ic_settings
 drawable side_nav_bar
 id action_about
 id action_settings
+id addQrEvent
 id app_bar_main
 id button
+id button3
+id buttonAAAAAAAAAAAAAA
 id buttonAdd
 id buttonAddEvent
 id buttonCancel
@@ -48,6 +51,7 @@ id fab
 id imageView
 id mobile_navigation
 id nav_addNewEvent
+id nav_camera
 id nav_editEvent
 id nav_existingEvent
 id nav_exportData
@@ -55,6 +59,7 @@ id nav_home
 id nav_host_fragment_content_main
 id nav_settings
 id nav_view
+id scanner_view
 id scrollView2
 id scrollViewE
 id scrollViewEx
@@ -63,10 +68,13 @@ id textView
 id textViewEvent
 id text_gallery
 id toolbar
+id tv_textView
 layout activity_main
 layout app_bar_main
+layout camera
 layout content_main
 layout fragment_addnewevent
+layout fragment_camera
 layout fragment_editevent
 layout fragment_existingevent
 layout fragment_exportdata
@@ -84,6 +92,7 @@ string app_name
 string delete
 string edit
 string menu_addnewevent
+string menu_camera
 string menu_editevent
 string menu_existingevent
 string menu_exportdata

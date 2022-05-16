@@ -26,6 +26,7 @@
     <string name="delete">Delete</string>
     <string name="edit">Edit</string>
     <string name="menu_addnewevent">Add new event</string>
+    <string name="menu_camera">Camera</string>
     <string name="menu_editevent">Edit event</string>
     <string name="menu_existingevent">Event</string>
     <string name="menu_exportdata">Export data</string>
@@ -38,17 +39,17 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <style name="Theme.StudIn" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        
+        <!-- Primary brand color. -->
         <item name="colorPrimary">@color/lime</item>
         <item name="colorPrimaryVariant">@color/blue_midDark</item>
         <item name="colorOnPrimary">@color/white</item>
-        
+        <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/yellow</item>
         <item name="colorSecondaryVariant">@color/blue_light</item>
         <item name="colorOnSecondary">@color/black</item>
-        
+        <!-- Status bar color. -->
         <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
-        
+        <!-- Customize your theme here. -->
     </style>
     <style name="Theme.StudIn.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="Theme.StudIn.NoActionBar">

@@ -11,6 +11,11 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
 
     <application
         android:name="com.example.studin.database.AppActivity"
@@ -24,6 +29,9 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.StudIn" >
+        <activity
+            android:name="com.example.studin.ui.androidCameraScanner.CameraActivity"
+            android:exported="false" />
         <activity
             android:name="com.example.studin.MainActivity"
             android:exported="true"

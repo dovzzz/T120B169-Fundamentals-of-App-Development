@@ -55,7 +55,7 @@ public class exportDataFragment extends Fragment {
         verifyStoragePermissions(getActivity());
         db = AppActivity.getDatabase();
         textView = binding.textView;
-        textView.setText("Select which events you want to export to .txt file!");
+        textView.setText("Select which events you want to export to a .txt file!");
 
         scrollView = binding.scrollView2;
         linearLayout = new LinearLayout(getActivity());

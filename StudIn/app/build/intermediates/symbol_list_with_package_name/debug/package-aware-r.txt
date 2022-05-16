@@ -135,6 +135,8 @@ attr arrowShaftLength
 attr attributeName
 attr autoCompleteMode
 attr autoCompleteTextViewStyle
+attr autoFocusButtonColor
+attr autoFocusButtonVisible
 attr autoSizeMaxTextSize
 attr autoSizeMinTextSize
 attr autoSizePresetSizes
@@ -497,6 +499,8 @@ attr fastScrollVerticalTrackDrawable
 attr finishPrimaryWithSecondary
 attr finishSecondaryWithPrimary
 attr firstBaselineToTopHeight
+attr flashButtonColor
+attr flashButtonVisible
 attr floatingActionButtonLargePrimaryStyle
 attr floatingActionButtonLargeSecondaryStyle
 attr floatingActionButtonLargeStyle
@@ -540,7 +544,14 @@ attr fontVariationSettings
 attr fontWeight
 attr forceApplySystemWindowInsetTop
 attr foregroundInsidePadding
+attr frameAspectRatioHeight
+attr frameAspectRatioWidth
+attr frameColor
+attr frameCornersRadius
+attr frameCornersSize
 attr framePosition
+attr frameSize
+attr frameThickness
 attr gapBetweenBars
 attr gestureInsetBottomIgnored
 attr goIcon
@@ -730,6 +741,7 @@ attr listPreferredItemPaddingStart
 attr logo
 attr logoDescription
 attr marginHorizontal
+attr maskColor
 attr materialAlertDialogBodyTextStyle
 attr materialAlertDialogButtonSpacerVisibility
 attr materialAlertDialogTheme
@@ -2507,6 +2519,10 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable gradient_background
 drawable ic_clock_black_24dp
+drawable ic_code_scanner_auto_focus_off
+drawable ic_code_scanner_auto_focus_on
+drawable ic_code_scanner_flash_off
+drawable ic_code_scanner_flash_on
 drawable ic_eye
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_studin
@@ -2639,6 +2655,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addQrEvent
 id alertTitle
 id aligned
 id all
@@ -2669,6 +2686,8 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id button
+id button3
+id buttonAAAAAAAAAAAAAA
 id buttonAdd
 id buttonAddEvent
 id buttonCancel
@@ -2888,6 +2907,7 @@ id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
 id nav_addNewEvent
+id nav_camera
 id nav_controller_view_tag
 id nav_editEvent
 id nav_existingEvent
@@ -2952,6 +2972,7 @@ id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
 id scale
+id scanner_view
 id screen
 id scroll
 id scrollIndicatorDown
@@ -3069,6 +3090,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tv_textView
 id unchecked
 id uniform
 id unlabeled
@@ -3179,6 +3201,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
 layout app_bar_main
+layout camera
 layout content_main
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -3197,6 +3220,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_addnewevent
+layout fragment_camera
 layout fragment_editevent
 layout fragment_existingevent
 layout fragment_exportdata
@@ -3376,6 +3400,7 @@ string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
 string menu_addnewevent
+string menu_camera
 string menu_editevent
 string menu_existingevent
 string menu_exportdata
@@ -4491,6 +4516,7 @@ styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVer
 styleable CircularProgressIndicator indicatorDirectionCircular indicatorInset indicatorSize
 styleable ClockFaceView clockFaceBackgroundColor clockNumberTextColor
 styleable ClockHandView clockHandColor materialCircleRadius selectorSize
+styleable CodeScannerView autoFocusButtonColor autoFocusButtonVisible flashButtonColor flashButtonVisible frameAspectRatioHeight frameAspectRatioWidth frameColor frameCornersRadius frameCornersSize frameSize frameThickness maskColor
 styleable CollapsingToolbarLayout collapsedTitleGravity collapsedTitleTextAppearance collapsedTitleTextColor contentScrim expandedTitleGravity expandedTitleMargin expandedTitleMarginBottom expandedTitleMarginEnd expandedTitleMarginStart expandedTitleMarginTop expandedTitleTextAppearance expandedTitleTextColor extraMultilineHeightEnabled forceApplySystemWindowInsetTop maxLines scrimAnimationDuration scrimVisibleHeightTrigger statusBarScrim title titleCollapseMode titleEnabled titlePositionInterpolator toolbarId
 styleable CollapsingToolbarLayout_Layout layout_collapseMode layout_collapseParallaxMultiplier
 styleable ColorStateListItem android_color android_alpha android_lStar alpha lStar

@@ -40,5 +40,10 @@
         android:name="com.example.studin.ui.exportData.exportDataFragment"
         android:label="@string/menu_exportdata"
         tools:layout="@layout/fragment_exportdata" />
+    <fragment
+        android:id="@+id/nav_camera"
+        android:name="com.example.studin.ui.androidCameraScanner.cameraFragment"
+        android:label="@string/menu_camera"
+        tools:layout="@layout/fragment_camera"/>
 
 </navigation>
