@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Dominykas\\Desktop\\test\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\Dominykas\\Documents\\GitHub\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Dominykas\\.gradle\\caches\\transforms-3\\38b0fc72f6957110d530968f0a52c572\\transformed\\navigation-fragment-2.4.2\\res\\values\\values.xml",
@@ -78,6 +78,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\Dominykas\\Documents\\GitHub\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "7,3,4,5,10,9,2,8,6",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "273,97,143,191,398,359,57,316,231",
+                        "endColumns": "41,44,46,38,40,37,38,41,40",
+                        "endOffsets": "310,137,185,225,434,392,91,353,267"
+                    },
+                    "to": {
+                        "startLines": "604,605,606,664,817,826,837,841,842",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "30426,30468,30513,34554,45623,46252,46987,47189,47231",
+                        "endColumns": "41,44,46,38,40,37,38,41,40",
+                        "endOffsets": "30463,30508,30555,34588,45659,46285,47021,47226,47267"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Dominykas\\.gradle\\caches\\transforms-3\\ed87a45bb076383e6b3450ed347397ef\\transformed\\window-1.0.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,7,8,9,10,11,19,23,34,51",
@@ -133,6 +150,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\Dominykas\\Documents\\GitHub\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\values\\dimens.xml",
+                    "from": {
+                        "startLines": "2,3,6,5,4",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "90,149,316,265,206",
+                        "endColumns": "57,55,41,49,57",
+                        "endOffsets": "143,200,353,310,259"
+                    },
+                    "to": {
+                        "startLines": "925,926,991,1393,1394",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "52768,52826,57035,84319,84369",
+                        "endColumns": "57,55,41,49,57",
+                        "endOffsets": "52821,52877,57072,84364,84422"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Dominykas\\.gradle\\caches\\transforms-3\\b01d67e7be9a1609b01046abdb5beb86\\transformed\\navigation-common-2.4.2\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,15,21,27,30",
@@ -149,23 +183,6 @@
                         "endLines": "10973,10979,10985,10988,11168",
                         "endColumns": "24,24,24,24,24",
                         "endOffsets": "702374,702618,702865,702998,713670"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Dominykas\\Desktop\\test\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\values\\dimens.xml",
-                    "from": {
-                        "startLines": "2,3,6,5,4",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "90,149,316,265,206",
-                        "endColumns": "57,55,41,49,57",
-                        "endOffsets": "143,200,353,310,259"
-                    },
-                    "to": {
-                        "startLines": "925,926,991,1393,1394",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "52768,52826,57035,84319,84369",
-                        "endColumns": "57,55,41,49,57",
-                        "endOffsets": "52821,52877,57072,84364,84422"
                     }
                 },
                 {
@@ -240,25 +257,6 @@
                         "endLines": "121,124,939,9918",
                         "endColumns": "55,47,51,24",
                         "endOffsets": "5896,6052,53707,650937"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Dominykas\\Desktop\\test\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\values\\themes.xml",
-                    "from": {
-                        "startLines": "2,21,16,23",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "102,993,833,1091",
-                        "endLines": "14,21,19,23",
-                        "endColumns": "12,94,12,84",
-                        "endOffsets": "825,1083,985,1171"
-                    },
-                    "to": {
-                        "startLines": "5730,5743,5744,5748",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "391776,392490,392584,392738",
-                        "endLines": "5742,5743,5747,5748",
-                        "endColumns": "12,93,12,83",
-                        "endOffsets": "392485,392579,392733,392817"
                     }
                 },
                 {
@@ -338,20 +336,22 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Dominykas\\Desktop\\test\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\values\\colors.xml",
+                    "source": "C:\\Users\\Dominykas\\Documents\\GitHub\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\values\\themes.xml",
                     "from": {
-                        "startLines": "7,3,4,5,10,9,2,8,6",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "273,97,143,191,398,359,57,316,231",
-                        "endColumns": "41,44,46,38,40,37,38,41,40",
-                        "endOffsets": "310,137,185,225,434,392,91,353,267"
+                        "startLines": "2,21,16,23",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "102,993,833,1091",
+                        "endLines": "14,21,19,23",
+                        "endColumns": "12,94,12,84",
+                        "endOffsets": "825,1083,985,1171"
                     },
                     "to": {
-                        "startLines": "604,605,606,664,817,826,837,841,842",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "30426,30468,30513,34554,45623,46252,46987,47189,47231",
-                        "endColumns": "41,44,46,38,40,37,38,41,40",
-                        "endOffsets": "30463,30508,30555,34588,45659,46285,47021,47226,47267"
+                        "startLines": "5730,5743,5744,5748",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "391776,392490,392584,392738",
+                        "endLines": "5742,5743,5747,5748",
+                        "endColumns": "12,93,12,83",
+                        "endOffsets": "392485,392579,392733,392817"
                     }
                 },
                 {
@@ -427,24 +427,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Dominykas\\.gradle\\caches\\transforms-3\\2e285888237efedab5561ef746a6998e\\transformed\\transition-1.4.1\\res\\values\\values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,95,142,185,240,287,341,393,442,503",
-                        "endColumns": "39,46,42,54,46,53,51,48,60,49",
-                        "endOffsets": "90,137,180,235,282,336,388,437,498,548"
-                    },
-                    "to": {
-                        "startLines": "1475,1476,1498,1502,1503,1534,1535,1536,1537,1538",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "89465,89505,90697,90879,90934,92538,92592,92644,92693,92754",
-                        "endColumns": "39,46,42,54,46,53,51,48,60,49",
-                        "endOffsets": "89500,89547,90735,90929,90976,92587,92639,92688,92749,92799"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Dominykas\\Desktop\\test\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\values\\strings.xml",
+                    "source": "C:\\Users\\Dominykas\\Documents\\GitHub\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
                         "startLines": "23,8,7,1,21,20,14,18,16,15,17,10,11,12,6,5,4,3,2",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -460,6 +443,23 @@
                         "endLines": "7,1624,1625,1627,1636,1637,1690,1691,1692,1693,1694,1695,1696,1697,1736,1737,1738,1739,1740",
                         "endColumns": "19,46,52,43,41,37,58,46,53,52,55,42,50,47,61,74,51,75,73",
                         "endOffsets": "309,98272,98325,98452,99438,99476,105782,105829,105883,105936,105992,106035,106086,106134,112983,113058,113110,113186,113260"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Dominykas\\.gradle\\caches\\transforms-3\\2e285888237efedab5561ef746a6998e\\transformed\\transition-1.4.1\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,95,142,185,240,287,341,393,442,503",
+                        "endColumns": "39,46,42,54,46,53,51,48,60,49",
+                        "endOffsets": "90,137,180,235,282,336,388,437,498,548"
+                    },
+                    "to": {
+                        "startLines": "1475,1476,1498,1502,1503,1534,1535,1536,1537,1538",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "89465,89505,90697,90879,90934,92538,92592,92644,92693,92754",
+                        "endColumns": "39,46,42,54,46,53,51,48,60,49",
+                        "endOffsets": "89500,89547,90735,90929,90976,92587,92639,92688,92749,92799"
                     }
                 },
                 {

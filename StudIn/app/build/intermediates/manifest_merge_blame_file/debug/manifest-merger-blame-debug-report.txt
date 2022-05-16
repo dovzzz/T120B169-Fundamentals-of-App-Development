@@ -6,76 +6,76 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="29"
-8-->C:\Users\Dominykas\Desktop\test\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml
+8-->C:\Users\Dominykas\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="32" />
-9-->C:\Users\Dominykas\Desktop\test\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml
+9-->C:\Users\Dominykas\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-11-->C:\Users\Dominykas\Desktop\test\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:5:5-80
-11-->C:\Users\Dominykas\Desktop\test\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:5:22-77
+11-->C:\Users\Dominykas\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:5:5-80
+11-->C:\Users\Dominykas\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:5:22-77
 12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-12-->C:\Users\Dominykas\Desktop\test\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:6:5-81
-12-->C:\Users\Dominykas\Desktop\test\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:6:22-78
+12-->C:\Users\Dominykas\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:6:5-81
+12-->C:\Users\Dominykas\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:6:22-78
 13    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
-13-->C:\Users\Dominykas\Desktop\test\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:7:5-82
-13-->C:\Users\Dominykas\Desktop\test\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:7:22-79
+13-->C:\Users\Dominykas\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:7:5-82
+13-->C:\Users\Dominykas\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:7:22-79
 14    <uses-permission android:name="android.permission.CAMERA" />
-14-->C:\Users\Dominykas\Desktop\test\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:8:5-65
-14-->C:\Users\Dominykas\Desktop\test\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:8:22-62
+14-->C:\Users\Dominykas\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:8:5-65
+14-->C:\Users\Dominykas\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:8:22-62
 15
 16    <uses-feature
-16-->C:\Users\Dominykas\Desktop\test\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:10:5-12:36
+16-->C:\Users\Dominykas\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:10:5-12:36
 17        android:name="android.hardware.camera"
-17-->C:\Users\Dominykas\Desktop\test\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:11:9-47
+17-->C:\Users\Dominykas\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:11:9-47
 18        android:required="false" />
-18-->C:\Users\Dominykas\Desktop\test\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:12:9-33
+18-->C:\Users\Dominykas\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:12:9-33
 19
 20    <application
-20-->C:\Users\Dominykas\Desktop\test\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:14:5-36:19
+20-->C:\Users\Dominykas\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:14:5-36:19
 21        android:name="com.example.studin.database.AppActivity"
-21-->C:\Users\Dominykas\Desktop\test\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:15:9-45
+21-->C:\Users\Dominykas\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:15:9-45
 22        android:allowBackup="true"
-22-->C:\Users\Dominykas\Desktop\test\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:16:9-35
+22-->C:\Users\Dominykas\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:16:9-35
 23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 23-->[androidx.core:core:1.7.0] C:\Users\Dominykas\.gradle\caches\transforms-3\46678933633e897331f6cbff7aabb141\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 24        android:debuggable="true"
 25        android:extractNativeLibs="false"
 26        android:icon="@mipmap/ic_launcher"
-26-->C:\Users\Dominykas\Desktop\test\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:17:9-43
+26-->C:\Users\Dominykas\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:17:9-43
 27        android:label="@string/app_name"
-27-->C:\Users\Dominykas\Desktop\test\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:18:9-41
+27-->C:\Users\Dominykas\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:18:9-41
 28        android:roundIcon="@mipmap/ic_launcher_round"
-28-->C:\Users\Dominykas\Desktop\test\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:19:9-54
+28-->C:\Users\Dominykas\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:19:9-54
 29        android:supportsRtl="true"
-29-->C:\Users\Dominykas\Desktop\test\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:20:9-35
+29-->C:\Users\Dominykas\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:20:9-35
 30        android:testOnly="true"
 31        android:theme="@style/Theme.StudIn" >
-31-->C:\Users\Dominykas\Desktop\test\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:21:9-44
+31-->C:\Users\Dominykas\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:21:9-44
 32        <activity
-32-->C:\Users\Dominykas\Desktop\test\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:22:9-24:40
+32-->C:\Users\Dominykas\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:22:9-24:40
 33            android:name="com.example.studin.ui.androidCameraScanner.CameraActivity"
-33-->C:\Users\Dominykas\Desktop\test\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:23:13-67
+33-->C:\Users\Dominykas\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:23:13-67
 34            android:exported="false" />
-34-->C:\Users\Dominykas\Desktop\test\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:24:13-37
+34-->C:\Users\Dominykas\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:24:13-37
 35        <activity
-35-->C:\Users\Dominykas\Desktop\test\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:25:9-35:20
+35-->C:\Users\Dominykas\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:25:9-35:20
 36            android:name="com.example.studin.MainActivity"
-36-->C:\Users\Dominykas\Desktop\test\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:26:13-41
+36-->C:\Users\Dominykas\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:26:13-41
 37            android:exported="true"
-37-->C:\Users\Dominykas\Desktop\test\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:27:13-36
+37-->C:\Users\Dominykas\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:27:13-36
 38            android:label="@string/app_name"
-38-->C:\Users\Dominykas\Desktop\test\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:28:13-45
+38-->C:\Users\Dominykas\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:28:13-45
 39            android:theme="@style/Theme.StudIn.NoActionBar" >
-39-->C:\Users\Dominykas\Desktop\test\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:29:13-60
+39-->C:\Users\Dominykas\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:29:13-60
 40            <intent-filter>
-40-->C:\Users\Dominykas\Desktop\test\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:30:13-34:29
+40-->C:\Users\Dominykas\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:30:13-34:29
 41                <action android:name="android.intent.action.MAIN" />
-41-->C:\Users\Dominykas\Desktop\test\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:31:17-69
-41-->C:\Users\Dominykas\Desktop\test\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:31:25-66
+41-->C:\Users\Dominykas\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:31:17-69
+41-->C:\Users\Dominykas\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:31:25-66
 42
 43                <category android:name="android.intent.category.LAUNCHER" />
-43-->C:\Users\Dominykas\Desktop\test\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:33:17-77
-43-->C:\Users\Dominykas\Desktop\test\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:33:27-74
+43-->C:\Users\Dominykas\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:33:17-77
+43-->C:\Users\Dominykas\Documents\GitHub\T120B169-Fundamentals-of-App-Development\StudIn\app\src\main\AndroidManifest.xml:33:27-74
 44            </intent-filter>
 45        </activity>
 46

@@ -9,8 +9,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -37,13 +35,9 @@ public class cameraFragment extends Fragment {
     private static final int REQUEST_CAMERA = 1;
     private static final String[] CAMERA_PERMISSION = {Manifest.permission.CAMERA};
     private FragmentCameraBinding binding;
-    private String res;
     private AppDatabase db;
-    TextView tv_textV;
 
 
-    Button buttonQRCode;
-    Button button3;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
@@ -53,7 +47,6 @@ public class cameraFragment extends Fragment {
         binding = FragmentCameraBinding.inflate(inflater, container, false);
         View root = inflater.inflate(R.layout.fragment_camera, container, false);
         CodeScannerView scannerView = root.findViewById(R.id.scanner_view);
-        tv_textV = binding.tvTextView;
         db= AppActivity.getDatabase();
 
 
@@ -65,9 +58,7 @@ public class cameraFragment extends Fragment {
                 activity.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        res = result.getText();
                         //Toast.makeText(activity, result.getText(), Toast.LENGTH_SHORT).show();
-                        tv_textV.setText(result.getText());
                         handleResult(result);
 
                     }
@@ -81,38 +72,6 @@ public class cameraFragment extends Fragment {
             }
         });
 
-
-
-        buttonQRCode = binding.buttonAAAAAAAAAAAAAA;
-        buttonQRCode.setOnClickListener(new View.OnClickListener() {
-
-           @Override
-            public void onClick(View view) {
-                // on click opens data input view for new event
-                //textview -> string -> split i masyva - > i duombaze
-                //res = "Matke;Egzaminas;kazkas;2022-05-17;12:43;2022-05-19;15:02;-";
-                /**String[] seperated = res.split(";");
-                EventTable event = new EventTable(seperated[0],
-                        seperated[1], seperated[2],
-                        seperated[3], seperated[4],
-                        seperated[5], seperated[6],
-                        seperated[7]);
-                db.eventDAO().insert(event);
-
-**/             tv_textV.setText("Labas");
-
-                //Navigation.findNavController(view).popBackStack();
-            }
-        });
-        button3 = binding.button3;
-        button3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast toast = Toast.makeText(activity, "Event was successfully added!",
-                        Toast.LENGTH_LONG);
-                toast.show();
-            }
-        });
         return root;
 
     }
@@ -178,10 +137,4 @@ public class cameraFragment extends Fragment {
         AlertDialog alert = builder.create();
         alert.show();
     }
-
-
-
-
-
-
 }

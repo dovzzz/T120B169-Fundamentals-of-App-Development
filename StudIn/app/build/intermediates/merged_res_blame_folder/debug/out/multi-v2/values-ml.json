@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Dominykas\\Desktop\\test\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ml\\values-ml.xml",
+            "outputFile": "C:\\Users\\Dominykas\\Documents\\GitHub\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ml\\values-ml.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Dominykas\\.gradle\\caches\\transforms-3\\46678933633e897331f6cbff7aabb141\\transformed\\core-1.7.0\\res\\values-ml\\values-ml.xml",

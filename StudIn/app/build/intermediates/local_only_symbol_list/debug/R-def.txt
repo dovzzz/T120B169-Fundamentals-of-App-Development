@@ -27,8 +27,6 @@ id action_settings
 id addQrEvent
 id app_bar_main
 id button
-id button3
-id buttonAAAAAAAAAAAAAA
 id buttonAdd
 id buttonAddEvent
 id buttonCancel

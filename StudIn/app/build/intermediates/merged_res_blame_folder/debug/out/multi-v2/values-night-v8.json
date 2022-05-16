@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Dominykas\\Desktop\\test\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "C:\\Users\\Dominykas\\Documents\\GitHub\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Dominykas\\.gradle\\caches\\transforms-3\\eac9e08fa28d6671a6f932ada5a5a9c7\\transformed\\material-1.5.0\\res\\values-night-v8\\values-night-v8.xml",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Dominykas\\.gradle\\caches\\transforms-3\\97988b0f28a513a04038e9dd724181a1\\transformed\\appcompat-1.4.1\\res\\values-night-v8\\values-night-v8.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,125,209,293,389,491,593,687",
-                        "endColumns": "69,83,83,95,101,101,93,88",
-                        "endOffsets": "120,204,288,384,486,588,682,771"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,47",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "100,170,254,338,434,536,638,4177",
-                        "endColumns": "69,83,83,95,101,101,93,88",
-                        "endOffsets": "165,249,333,429,531,633,727,4261"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Dominykas\\Desktop\\test\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "C:\\Users\\Dominykas\\Documents\\GitHub\\T120B169-Fundamentals-of-App-Development\\StudIn\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2,16",
                         "startColumns": "4,4",
@@ -54,6 +37,23 @@
                         "endLines": "45,46",
                         "endColumns": "12,82",
                         "endOffsets": "4089,4172"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Dominykas\\.gradle\\caches\\transforms-3\\97988b0f28a513a04038e9dd724181a1\\transformed\\appcompat-1.4.1\\res\\values-night-v8\\values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,209,293,389,491,593,687",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "120,204,288,384,486,588,682,771"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,47",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "100,170,254,338,434,536,638,4177",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "165,249,333,429,531,633,727,4261"
                     }
                 }
             ]

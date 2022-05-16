@@ -2686,8 +2686,6 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id button
-id button3
-id buttonAAAAAAAAAAAAAA
 id buttonAdd
 id buttonAddEvent
 id buttonCancel
