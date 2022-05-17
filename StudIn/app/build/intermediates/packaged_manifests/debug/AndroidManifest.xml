@@ -30,9 +30,6 @@
         android:testOnly="true"
         android:theme="@style/Theme.StudIn" >
         <activity
-            android:name="com.example.studin.ui.androidCameraScanner.CameraActivity"
-            android:exported="false" />
-        <activity
             android:name="com.example.studin.MainActivity"
             android:exported="true"
             android:label="@string/app_name"

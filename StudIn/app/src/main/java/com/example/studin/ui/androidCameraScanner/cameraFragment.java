@@ -15,6 +15,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import com.budiyev.android.codescanner.CodeScanner;
 import com.budiyev.android.codescanner.CodeScannerView;
@@ -25,8 +26,6 @@ import com.example.studin.database.AppDatabase;
 import com.example.studin.database.EventTable;
 import com.example.studin.databinding.FragmentCameraBinding;
 import com.google.zxing.Result;
-
-
 
 
 public class cameraFragment extends Fragment {
@@ -60,7 +59,6 @@ public class cameraFragment extends Fragment {
                     public void run() {
                         //Toast.makeText(activity, result.getText(), Toast.LENGTH_SHORT).show();
                         handleResult(result);
-
                     }
                 });
             }
@@ -83,7 +81,6 @@ public class cameraFragment extends Fragment {
     }
 
 
-
     @Override
     public void onPause() {
         mCodeScanner.releaseResources();
@@ -104,22 +101,29 @@ public class cameraFragment extends Fragment {
 
     public void handleResult(Result result) {
         String rawRes = result.getText();
+        String[] seperated = rawRes.split(";");
 
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 
         builder.setTitle("Scan result:");
-        builder.setMessage(result.getText());
+        builder.setMessage("Do you want to add event: " +
+                "\n\nCourse name: " + seperated[0] +
+                "\nExam name: " + seperated[1] + "\nDescription: " + seperated[2] +
+                "\nExam date: " + seperated[3] + " " + seperated[4] +
+                "\nRetake date: " + seperated[5] + " " + seperated[6] +
+                "\nOther info: " + seperated[7]);
 
         builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
-                String[] seperated = rawRes.split(";");
-                EventTable event = new EventTable(seperated[0].toString(),
-                        seperated[1].toString(), seperated[2].toString(),
-                        seperated[3].toString(), seperated[4].toString(),
-                        seperated[5].toString(), seperated[6].toString(),
-                        seperated[7].toString());
+                EventTable event = new EventTable(seperated[0],
+                        seperated[1], seperated[2],
+                        seperated[3], seperated[4],
+                        seperated[5], seperated[6],
+                        seperated[7]);
                 db.eventDAO().insert(event);
-                Toast toast = Toast.makeText(getContext(), "Event was successfully added!" + event.getStringAll(),
+
+                Navigation.findNavController(getView()).popBackStack();
+                Toast toast = Toast.makeText(getContext(), "Event was successfully added!",
                         Toast.LENGTH_LONG);
                 toast.show();
             }
@@ -129,7 +133,6 @@ public class cameraFragment extends Fragment {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 // Do nothing
-
                 dialog.dismiss();
             }
         });

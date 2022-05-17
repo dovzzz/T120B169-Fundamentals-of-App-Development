@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -48,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_settings, R.id.nav_exportData)
+                R.id.nav_home, R.id.nav_exportData) // , R.id.nav_settings
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
@@ -73,10 +72,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.action_settings:
-                Toast.makeText(this, "settings",
-                        Toast.LENGTH_LONG).show();
-                return true;
+//            case R.id.action_settings:
+//                Toast.makeText(this, "settings",
+//                        Toast.LENGTH_LONG).show();
+//                return true;
 
             case R.id.action_about:
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);

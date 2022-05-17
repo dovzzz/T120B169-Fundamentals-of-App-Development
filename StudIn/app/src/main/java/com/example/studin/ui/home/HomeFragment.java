@@ -259,8 +259,6 @@ public class HomeFragment extends Fragment {
 
 
     public void showAlertDialogButtonClicked(View view) {
-
-
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle("Add new task");
 
@@ -287,46 +285,7 @@ public class HomeFragment extends Fragment {
         });
         AlertDialog dialog = builder.create();
         dialog.show();
-
-
-        /**builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-
-            }
-        });
-        builder.setNegativeButton("Cancel", null); **/
-
-// create and show the alert dialog
-
-        // setup the alert builder
-        /**AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-        builder.setTitle("Add new task");
-
-        // add a list
-        String[] options = {"Manually", "Scan QR code", "Testas"};
-        builder.setItems(options, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                switch (which) {
-                    case 0: // manually
-                        Navigation.findNavController(view).navigate(R.id.nav_addNewEvent);
-                        Toast.makeText(view.getContext(), "MANUALLY", Toast.LENGTH_SHORT).show();
-                    case 1: // qr code
-                        Navigation.findNavController(view).navigate(R.id.nav_camera);
-                        Toast.makeText(view.getContext(), "QR", Toast.LENGTH_SHORT).show();
-
-                }
-            }
-        });
-
-
-
-        // create and show the alert dialog
-        AlertDialog dialog = builder.create();
-        dialog.show(); **/
     }
-
 
 
     private void getEventList() {
