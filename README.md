@@ -21,7 +21,7 @@ String sources; nullable
 SQL >> EventDAO.java
 
 # Date and time
-Date format yyyy/MM/dd (example: 2022/04/09)
+Date format yyyy-MM-dd (example: 2022-04-09)
 Time format HH:mm (example: 09:15)
 
 # Fragments
