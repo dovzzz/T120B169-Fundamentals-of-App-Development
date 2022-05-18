@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/tools">
     <string-array name="calendar_array">
+        <item/>
         <item>All</item>
         <item>Month</item>
         <item>Week</item>
@@ -39,17 +40,17 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <style name="Theme.StudIn" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <!-- Primary brand color. -->
+        
         <item name="colorPrimary">@color/lime</item>
         <item name="colorPrimaryVariant">@color/blue_midDark</item>
         <item name="colorOnPrimary">@color/white</item>
-        <!-- Secondary brand color. -->
+        
         <item name="colorSecondary">@color/yellow</item>
         <item name="colorSecondaryVariant">@color/blue_light</item>
         <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
+        
         <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+        
     </style>
     <style name="Theme.StudIn.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="Theme.StudIn.NoActionBar">

@@ -2649,6 +2649,7 @@ int id action_menu_presenter 0x7f090040
 int id action_mode_bar 0x7f090041
 int id action_mode_bar_stub 0x7f090042
 int id action_mode_close_button 0x7f090043
+int id action_search 0x7f090211
 int id action_text 0x7f090045
 int id actions 0x7f090046
 int id activity_chooser_view_content 0x7f090047
@@ -2911,6 +2912,7 @@ int id nav_exportData 0x7f090147
 int id nav_home 0x7f090148
 int id nav_host_fragment_container 0x7f090149
 int id nav_host_fragment_content_main 0x7f09014a
+int id nav_settings 0x7f09014b
 int id nav_view 0x7f09014c
 int id navigation_bar_item_active_indicator_view 0x7f09014d
 int id navigation_bar_item_icon_container 0x7f09014e

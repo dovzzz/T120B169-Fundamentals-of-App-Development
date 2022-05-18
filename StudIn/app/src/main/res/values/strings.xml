@@ -22,6 +22,7 @@
     <string name="delete">Delete</string>
 
     <string-array name="calendar_array">
+        <item></item>
         <item>All</item>
         <item>Month</item>
         <item>Week</item>

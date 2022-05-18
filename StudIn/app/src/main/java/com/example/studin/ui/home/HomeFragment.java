@@ -22,6 +22,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
 
+import com.example.studin.MainActivity;
 import com.example.studin.R;
 import com.example.studin.database.AppActivity;
 import com.example.studin.database.AppDatabase;
@@ -41,6 +42,8 @@ public class HomeFragment extends Fragment {
     Button buttonAddEvent;
     Button buttonVisible;
 
+    private Spinner spinner;
+    private ArrayAdapter<CharSequence> adapter;
     CalendarView calendarView;
 
 
@@ -54,15 +57,20 @@ public class HomeFragment extends Fragment {
 
 
         db = AppActivity.getDatabase();
+
+
+        try {
+            ((MainActivity) getActivity()).unhideSearch();
+        } catch (Exception e) {}
+
+
         //Spinner pradzia
-
         String[] items = getResources().getStringArray(R.array.calendar_array);
-
         //get the spinner from the xml.
-        Spinner spinner = binding.calendarDropDown;
+        spinner = binding.calendarDropDown;
         //create an adapter to describe how the items are displayed,
         //adapters are used in several places in android.
-        ArrayAdapter<CharSequence> adapter = new ArrayAdapter<CharSequence>(getActivity(), android.R.layout.simple_spinner_item, items);
+        adapter = new ArrayAdapter<CharSequence>(getActivity(), android.R.layout.simple_spinner_item, items);
         // Specify the layout to use when the list of choices appears
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Apply the adapter to the spinner
@@ -73,122 +81,21 @@ public class HomeFragment extends Fragment {
             public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
                 String item = adapterView.getItemAtPosition(position).toString();
                 //Toast.makeText(adapterView.getContext(), item, Toast.LENGTH_SHORT).show();
-                if(item.equals("Month"))
-                {
-                    //Toast.makeText(adapterView.getContext(), "FIVE", Toast.LENGTH_SHORT).show();
-
-                    scrollView.invalidate();
-
-                    scrollView = binding.scrollViewE;
-                    linearLayout = new LinearLayout(getActivity());
-                    linearLayout.setOrientation(LinearLayout.VERTICAL);
-                    getMonthlyEventList();
-                    scrollView.addView(linearLayout);
-
-                    linearLayout.setClickable(false);
-                    int childCount = linearLayout.getChildCount();
-                    for (int i = 0; i < childCount; i++) {
-                        View childView = linearLayout.getChildAt(i);
-                        int childViewId = childView.getId();
-                        childView.setOnClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View view) {
-                                // open new fragment to view event and edit or remove it
-                                EventTable event = db.eventDAO().getTask(childViewId);
-                                final Bundle bundle = new Bundle();
-                                bundle.putInt("id", event.getId());
-                                Navigation.findNavController(view).navigate(R.id.nav_existingEvent, bundle);
-                            }
-                        });
-                    }
-
-                }
-                else if(item.equals("All"))
-                {
-                    scrollView.invalidate();
-
-                    scrollView = binding.scrollViewE;
-                    linearLayout = new LinearLayout(getActivity());
-                    linearLayout.setOrientation(LinearLayout.VERTICAL);
-                    getEventList();
-                    scrollView.addView(linearLayout);
-
-                    linearLayout.setClickable(false);
-                    int childCount = linearLayout.getChildCount();
-                    for (int i = 0; i < childCount; i++) {
-                        View childView = linearLayout.getChildAt(i);
-                        int childViewId = childView.getId();
-                        childView.setOnClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View view) {
-                                // open new fragment to view event and edit or remove it
-                                EventTable event = db.eventDAO().getTask(childViewId);
-                                final Bundle bundle = new Bundle();
-                                bundle.putInt("id", event.getId());
-                                Navigation.findNavController(view).navigate(R.id.nav_existingEvent, bundle);
-                            }
-                        });
-                    }
-                }
-                else if(item.equals("Day"))
-                {
-                    scrollView.invalidate();
-
-                    scrollView = binding.scrollViewE;
-                    linearLayout = new LinearLayout(getActivity());
-                    linearLayout.setOrientation(LinearLayout.VERTICAL);
-                    getDailyEventList();
-                    scrollView.addView(linearLayout);
-
-                    linearLayout.setClickable(false);
-                    int childCount = linearLayout.getChildCount();
-                    for (int i = 0; i < childCount; i++) {
-                        View childView = linearLayout.getChildAt(i);
-                        int childViewId = childView.getId();
-                        childView.setOnClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View view) {
-                                // open new fragment to view event and edit or remove it
-                                EventTable event = db.eventDAO().getTask(childViewId);
-                                final Bundle bundle = new Bundle();
-                                bundle.putInt("id", event.getId());
-                                Navigation.findNavController(view).navigate(R.id.nav_existingEvent, bundle);
-                            }
-                        });
-                    }
-                }
-                else if(item.equals("Week"))
-                {
-                    scrollView.invalidate();
-
-                    scrollView = binding.scrollViewE;
-                    linearLayout = new LinearLayout(getActivity());
-                    linearLayout.setOrientation(LinearLayout.VERTICAL);
-                    getWeeklyEventList();
-                    scrollView.addView(linearLayout);
-
-                    linearLayout.setClickable(false);
-                    int childCount = linearLayout.getChildCount();
-                    for (int i = 0; i < childCount; i++) {
-                        View childView = linearLayout.getChildAt(i);
-                        int childViewId = childView.getId();
-                        childView.setOnClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View view) {
-                                // open new fragment to view event and edit or remove it
-                                EventTable event = db.eventDAO().getTask(childViewId);
-                                final Bundle bundle = new Bundle();
-                                bundle.putInt("id", event.getId());
-                                Navigation.findNavController(view).navigate(R.id.nav_existingEvent, bundle);
-                            }
-                        });
-                    }
+                if (item.equals("")) {
+                    showEvents();
+                } else if (item.equals("All")) {
+                    displayEventLayout(db.eventDAO().getAllTasks());
+                } else if (item.equals("Month")) {
+                    displayEventLayout(db.eventDAO().getMonthlyTasks());
+                } else if (item.equals("Week")) {
+                    displayEventLayout(db.eventDAO().getWeeklyTasks());
+                } else if (item.equals("Day")) {
+                    displayEventLayout(db.eventDAO().getDailyTasks());
                 }
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
-
             }
         });
 
@@ -199,13 +106,10 @@ public class HomeFragment extends Fragment {
             public void onClick(View view) {
                 CalendarView cc = (CalendarView) getView().findViewById(R.id.calendarView);
 
-                if (cc.getVisibility() == View.VISIBLE)
-                {
+                if (cc.getVisibility() == View.VISIBLE) {
                     cc.setVisibility(View.GONE);
                     scrollView.getLayoutParams().height = 1614;
-                }
-                else if (cc.getVisibility() == View.GONE)
-                {
+                } else if (cc.getVisibility() == View.GONE) {
                     cc.setVisibility(View.VISIBLE);
                     scrollView.getLayoutParams().height = 688;
                 }
@@ -224,10 +128,63 @@ public class HomeFragment extends Fragment {
         });
 
 
+        return root;
+    }
+
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        binding = null;
+        ((MainActivity) getActivity()).hideSearch();
+    }
+
+
+    public void showAlertDialogButtonClicked(View view) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        builder.setTitle("Add new task");
+
+        // add a radio button list
+        String[] opts = {"Manually", "Scan QR code"};
+        int checkedItem = -1;
+        builder.setSingleChoiceItems(opts, checkedItem, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                if (which == 0) {
+                    Navigation.findNavController(view).navigate(R.id.nav_addNewEvent);
+                    dialog.dismiss();
+
+                } else if (which == 1) {
+                    Navigation.findNavController(view).navigate(R.id.nav_camera);
+                    dialog.dismiss();
+                }
+            }
+        });
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
+
+    public void showEvents() {
+        List<EventTable> listFromMainActivity = ((MainActivity) getActivity()).eventsFiltered;
+
+        if (!((MainActivity) getActivity()).isSearching) {
+            displayEventLayout(db.eventDAO().getAllTasks());
+        } else {
+            displayEventLayout(listFromMainActivity);
+        }
+    }
+
+
+    private void displayEventLayout(List<EventTable> eventTableList) {
+        //scrollView.invalidate();
         scrollView = binding.scrollViewE;
+
         linearLayout = new LinearLayout(getActivity());
         linearLayout.setOrientation(LinearLayout.VERTICAL);
-        getEventList();
+
+        scrollView.removeAllViews();
+        ViewList(eventTableList);
+
         scrollView.addView(linearLayout);
 
         linearLayout.setClickable(false);
@@ -246,78 +203,14 @@ public class HomeFragment extends Fragment {
                 }
             });
         }
-
-
-        return root;
     }
 
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        binding = null;
-    }
-
-
-    public void showAlertDialogButtonClicked(View view) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-        builder.setTitle("Add new task");
-
-        // add a radio button list
-        String[] opts = {"Manually", "Scan QR code"};
-        int checkedItem = -1;
-        builder.setSingleChoiceItems(opts, checkedItem, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                // user checked an item
-                // user clicked OK
-                if (which == 0){
-                    Navigation.findNavController(view).navigate(R.id.nav_addNewEvent);
-                    //Toast.makeText(view.getContext(), "MANUALLY", Toast.LENGTH_SHORT).show();
-                    dialog.dismiss();
-
-                }
-                else if (which == 1) {
-                    Navigation.findNavController(view).navigate(R.id.nav_camera);
-                    //Toast.makeText(view.getContext(), "QR", Toast.LENGTH_SHORT).show();
-                    dialog.dismiss();
-                }
-            }
-        });
-        AlertDialog dialog = builder.create();
-        dialog.show();
-    }
-
-
-    private void getEventList() {
-        scrollView.removeAllViews();
-        List<EventTable> eventList = db.eventDAO().getAllTasks();
-        ViewList(eventList);
-    }
-
-    private void getMonthlyEventList() {
-        scrollView.removeAllViews();
-        List<EventTable> eventList = db.eventDAO().getMonthlyTasks();
-        ViewList(eventList);
-    }
-
-    private void getDailyEventList() {
-        scrollView.removeAllViews();
-        List<EventTable> eventList = db.eventDAO().getDailyTasks();
-        ViewList(eventList);
-    }
-
-    private void getWeeklyEventList() {
-        scrollView.removeAllViews();
-        List<EventTable> eventList = db.eventDAO().getWeeklyTasks();
-        ViewList(eventList);
-    }
-
-    private void ViewList(List<EventTable> eventList){
+    private void ViewList(List<EventTable> eventList) {
         for (EventTable event : eventList) {
             Button button = new Button(getActivity());
             button.setId(event.getId());
             button.setGravity(Gravity.LEFT);
-            button.setPadding(20,20,20,20);
+            button.setPadding(20, 20, 20, 20);
 
             RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.MATCH_PARENT,
@@ -326,7 +219,7 @@ public class HomeFragment extends Fragment {
             params.setMargins(5, 5, 50, 20);
             button.setLayoutParams(params);
 
-            GradientDrawable shape =  new GradientDrawable();
+            GradientDrawable shape = new GradientDrawable();
             shape.setCornerRadius(15);
 
             shape.setColor(MaterialColors.getColor(button, com.google.android.material.R.attr.colorSecondaryVariant));

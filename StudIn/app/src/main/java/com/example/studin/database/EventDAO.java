@@ -38,4 +38,7 @@ public interface EventDAO {
 
     @Query("SELECT * FROM EventTable WHERE exam_date= DATE('now') ORDER BY exam_date, exam_time")
     List<EventTable> getDailyTasks();
+
+    @Query("SELECT * FROM EventTable")
+    List<EventTable> getAllTasks1();
 }

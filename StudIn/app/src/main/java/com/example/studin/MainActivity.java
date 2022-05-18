@@ -6,30 +6,48 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Spinner;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import com.example.studin.database.AppActivity;
+import com.example.studin.database.AppDatabase;
+import com.example.studin.database.EventTable;
 import com.example.studin.databinding.ActivityMainBinding;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
-    //public AppDatabase db;
+    public AppDatabase db;
+
+    public List<EventTable> eventsFiltered;
+    public boolean isSearching;
+    private Spinner spinner;
+
+    public MenuItem searchItem;
+    private SearchView searchView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
 
-        //db= AppActivity.getDatabase();
+        db = AppActivity.getDatabase();
+        eventsFiltered = new ArrayList<>();
+        isSearching = false;
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
@@ -55,11 +73,52 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navigationView, navController);
     }
 
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
+
+        searchItem = menu.findItem(R.id.action_search);
+        searchView = (SearchView) searchItem.getActionView();
+        searchView.setQueryHint("Type here to search...");
+
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String s) {
+                eventsFiltered.clear();
+                for (EventTable event1 : db.eventDAO().getAllTasks1()) {
+                    if (event1.getStringAll().toLowerCase().contains(s.toLowerCase())) {
+                        eventsFiltered.add(event1);
+                    }
+                }
+
+                searchItem.collapseActionView();
+                isSearching = true;
+
+                //spinner = (Spinner) findViewById(R.id.calendarDropDown);
+                spinner.setVisibility(View.VISIBLE);
+                spinner.setSelection(0);
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String s) {
+                spinner = (Spinner) findViewById(R.id.calendarDropDown);
+                spinner.setVisibility(View.INVISIBLE);
+                spinner.setSelection(1);
+                return false;
+            }
+        });
+
         return true;
+    }
+
+    public void hideSearch(){
+        searchItem.setVisible(false);
+    }
+    public void unhideSearch(){
+        searchItem.setVisible(true);
     }
 
     @Override
