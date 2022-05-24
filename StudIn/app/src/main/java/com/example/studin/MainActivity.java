@@ -82,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
         searchItem = menu.findItem(R.id.action_search);
         searchView = (SearchView) searchItem.getActionView();
         searchView.setQueryHint("Type here to search...");
+        spinner = (Spinner) findViewById(R.id.calendarDropDown);
 
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
@@ -97,14 +98,14 @@ public class MainActivity extends AppCompatActivity {
                 isSearching = true;
 
                 //spinner = (Spinner) findViewById(R.id.calendarDropDown);
-                spinner.setVisibility(View.VISIBLE);
+                //spinner.setVisibility(View.VISIBLE);
                 spinner.setSelection(0);
                 return false;
             }
 
             @Override
             public boolean onQueryTextChange(String s) {
-                spinner = (Spinner) findViewById(R.id.calendarDropDown);
+                //spinner = (Spinner) findViewById(R.id.calendarDropDown);
                 spinner.setVisibility(View.INVISIBLE);
                 spinner.setSelection(1);
                 return false;
@@ -115,6 +116,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void hideSearch(){
+        searchItem.collapseActionView();
         searchItem.setVisible(false);
     }
     public void unhideSearch(){

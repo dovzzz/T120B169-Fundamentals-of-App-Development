@@ -119,7 +119,6 @@ public class HomeFragment extends Fragment {
 
         buttonAddEvent = binding.buttonAddEvent;
         buttonAddEvent.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View view) {
                 // on click opens data input view for new event
