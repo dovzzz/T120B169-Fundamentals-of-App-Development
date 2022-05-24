@@ -61,7 +61,8 @@ public class HomeFragment extends Fragment {
 
         try {
             ((MainActivity) getActivity()).unhideSearch();
-        } catch (Exception e) {}
+        } catch (Exception e) {
+        }
 
 
         //Spinner pradzia
@@ -169,7 +170,7 @@ public class HomeFragment extends Fragment {
         if (!((MainActivity) getActivity()).isSearching) {
             displayEventLayout(db.eventDAO().getAllTasks());
         } else {
-            displayEventLayout(listFromMainActivity);
+            displayEventLayoutSearch(listFromMainActivity);
         }
     }
 
@@ -183,6 +184,55 @@ public class HomeFragment extends Fragment {
 
         scrollView.removeAllViews();
         ViewList(eventTableList);
+
+        scrollView.addView(linearLayout);
+
+        linearLayout.setClickable(false);
+        int childCount = linearLayout.getChildCount();
+        for (int i = 0; i < childCount; i++) {
+            View childView = linearLayout.getChildAt(i);
+            int childViewId = childView.getId();
+            childView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    // open new fragment to view event and edit or remove it
+                    EventTable event = db.eventDAO().getTask(childViewId);
+                    final Bundle bundle = new Bundle();
+                    bundle.putInt("id", event.getId());
+                    Navigation.findNavController(view).navigate(R.id.nav_existingEvent, bundle);
+                }
+            });
+        }
+    }
+
+    private void displayEventLayoutSearch(List<EventTable> eventTableList) {
+        //scrollView.invalidate();
+        scrollView = binding.scrollViewE;
+
+        linearLayout = new LinearLayout(getActivity());
+        linearLayout.setOrientation(LinearLayout.VERTICAL);
+
+        scrollView.removeAllViews();
+
+        //
+        List<EventTable> events = db.eventDAO().getAllTasks();
+        boolean found = false;
+        for (int i = 0; i < events.size(); i++) {
+            for (int y = 0; y < eventTableList.size(); y++) {
+                if (events.get(i).getStringMain().toLowerCase().equals(eventTableList.get(y).getStringMain().toLowerCase())) {
+                    ViewEvent(eventTableList.get(y), com.google.android.material.R.attr.colorPrimary);
+                    found = true;
+                    continue;
+                }
+            }
+            if (found) {
+                found = false;
+                continue;
+            } else {
+                ViewEvent(events.get(i), com.google.android.material.R.attr.colorSecondaryVariant);
+            }
+        }
+        //
 
         scrollView.addView(linearLayout);
 
@@ -227,6 +277,29 @@ public class HomeFragment extends Fragment {
             button.setText(event.getStringMain());
             linearLayout.addView(button);
         }
+    }
+
+    private void ViewEvent(EventTable event1, int color) {
+        Button button = new Button(getActivity());
+        button.setId(event1.getId());
+        button.setGravity(Gravity.LEFT);
+        button.setPadding(20, 20, 20, 20);
+
+        RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(
+                RelativeLayout.LayoutParams.MATCH_PARENT,
+                RelativeLayout.LayoutParams.MATCH_PARENT
+        );
+        params.setMargins(5, 5, 50, 20);
+        button.setLayoutParams(params);
+
+        GradientDrawable shape = new GradientDrawable();
+        shape.setCornerRadius(15);
+
+        shape.setColor(MaterialColors.getColor(button, color));
+        button.setBackground(shape);
+
+        button.setText(event1.getStringMain());
+        linearLayout.addView(button);
     }
 
 }

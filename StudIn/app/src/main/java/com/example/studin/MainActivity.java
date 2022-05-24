@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
                 isSearching = true;
 
                 //spinner = (Spinner) findViewById(R.id.calendarDropDown);
-                //spinner.setVisibility(View.VISIBLE);
+                spinner.setVisibility(View.VISIBLE);
                 spinner.setSelection(0);
                 return false;
             }
